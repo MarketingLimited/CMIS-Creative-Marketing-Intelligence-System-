@@ -827,3 +827,9 @@ glossary:
 * ملاحظات الامتثال؟
 
 <!-- CMIS:END::STATUS -->
+
+<!-- CMIS:START::REFS_QUALITY -->
+### مراجع الجودة والامتثال
+- راجع `internal_checklists.md` قبل الإخراج النهائي.
+- طبّق قواعد `variation_strategy.md` عند توليد تنويعات.
+<!-- CMIS:END::REFS_QUALITY -->
