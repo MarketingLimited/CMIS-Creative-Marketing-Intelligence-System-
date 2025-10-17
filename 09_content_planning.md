@@ -959,6 +959,6 @@ def generate_content_plan(input):
 
 <!-- CMIS:START::REFS_QUALITY -->
 ### مراجع الجودة والامتثال
-- راجع `internal_checklists.md` قبل الإخراج النهائي.
-- طبّق قواعد `variation_strategy.md` عند توليد تنويعات.
+- راجع `quality_and_variations.md` قبل الإخراج النهائي.
+- طبّق قواعد `quality_and_variations.md` عند توليد تنويعات.
 <!-- CMIS:END::REFS_QUALITY -->

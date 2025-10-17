@@ -2,15 +2,15 @@
 
 ## نظرة عامة
 CMIS هو نظام ذكاء تسويقي توليدي بُني خصيصًا لتلبية متطلبات السوق البحرينية حيث اللغة العربية (RTL) والعملة الدينار البحريني (BHD) واشتراطات الإفصاح #إعلان. يجمع النظام بين ذكاء السوق، الإقناع، اختيار الأطر، التكييف متعدد القنوات، الاختبار والتحسين، التحقق من الامتثال، ثم يولّد حزمة تسليم موحّدة تشمل إعلانات القنوات المختلفة، تقارير الامتثال، سيناريوهات الفيديو، وخطط المحتوى.
-> **مهم:** استخدم الملف `instruction_prompt.md` كمرجع التشغيل الأساسي، مع الرجوع إلى `instruction_addendum.md` (تقويم السوق، قوالب JSON السريعة، الإعداد المتقدم) والوحدات 01–09 للتفاصيل التخصصية.
+> **مهم:** استخدم الملف `instruction_prompt.md` كمرجع التشغيل الأساسي، مع الرجوع إلى `instruction_addendum_and_playbooks.md` (تقويم السوق، قوالب JSON السريعة، الإعداد المتقدم) والوحدات 01–09 للتفاصيل التخصصية.
 
 ## Getting Started
 ابدأ مع CMIS عبر الخطوات التالية المصمّمة للمستخدمين الجدد. *(لا تتوفر حاليًا لقطات شاشة داخل المستودع؛ أضف صورًا إلى هذا القسم عند تجهيزها لدعم التوجّه البصري.)*
 
 1. **استنساخ المستودع وتنظيم الملفات:**
-   - نفّذ `git clone` أو حمّل الأرشيف، ثم تأكد من بقاء الملفات الرئيسة (`instruction_prompt.md`, `instruction_addendum.md`, والوحدات `01`–`09`) ضمن المجلد ذاته.
+   - نفّذ `git clone` أو حمّل الأرشيف، ثم تأكد من بقاء الملفات الرئيسة (`instruction_prompt.md`, `instruction_addendum_and_playbooks.md`, والوحدات `01`–`09`) ضمن المجلد ذاته.
 2. **قراءة دليل التشغيل الأساسي:**
-   - استعرض `instruction_prompt.md` لفهم التسلسل الإجرائي، ثم راجع `instruction_addendum.md` لتفاصيل السوق والقوالب الجاهزة.
+   - استعرض `instruction_prompt.md` لفهم التسلسل الإجرائي، ثم راجع `instruction_addendum_and_playbooks.md` لتفاصيل السوق والقوالب الجاهزة.
 3. **ضبط GPT أو Gem جديد:**
    - اتّبع جدول "إعداد مخصص سريع" أدناه لنقل التعليمات إلى ChatGPT أو Gemini، مع تفعيل خيارات التصفح ورفع الملفات.
 4. **تجهيز ملفات المعرفة:**
@@ -18,11 +18,11 @@ CMIS هو نظام ذكاء تسويقي توليدي بُني خصيصًا لت
 5. **اختبار أولي:**
    - استخدم أحد *Prompt Starters* الموصى بها لتشغيل سيناريو متكامل والتأكد من أن النظام يستدعي كل وحدة بالترتيب.
 6. **توثيق الملاحظات:**
-   - سجّل أي مخرجات تحتاج تخصيصًا إضافيًا، ثم عدّل الملفات الداعمة (مثل `advanced_playbooks.md`) قبل مشاركة النسخة مع الفريق.
+   - سجّل أي مخرجات تحتاج تخصيصًا إضافيًا، ثم عدّل الملفات الداعمة (مثل `instruction_addendum_and_playbooks.md`) قبل مشاركة النسخة مع الفريق.
 
 ## دليل توجيهي مختصر
 - للاطلاع على التسلسل التشغيلي الكامل انتقل إلى [`instruction_prompt.md`](instruction_prompt.md) بوصفه مصدر الحقيقة اليومي.
-- للحصول على القوالب المتقدمة وسيناريوهات الاستخدام، راجع [`instruction_addendum.md`](instruction_addendum.md) و[`advanced_playbooks.md`](advanced_playbooks.md).
+- للحصول على القوالب المتقدمة وسيناريوهات الاستخدام، راجع [`instruction_addendum_and_playbooks.md`](instruction_addendum_and_playbooks.md) (يتضمن محتوى الملحق وPlaybooks المتقدمة في ملف موحّد).
 - إذا احتجت الوحدات المتخصصة (01–09)، ستجد كل وحدة في ملفها المرقم مثل [`01_market_intel.md`](01_market_intel.md).
 - يظل هذا README المرجع التوجيهي الحي؛ تم حذف الملف المؤرشف `main.md` بعد نقل محتواه إلى الأقسام أعلاه.
 
@@ -37,7 +37,7 @@ CMIS هو نظام ذكاء تسويقي توليدي بُني خصيصًا لت
 | --- | --- | --- |
 | 1 | ادخل إلى **ChatGPT → Explore → Create a GPT** واختر خيار البدء من الصفر. | افتح **Gemini AI Studio → Create a new Gem** وعيّن اسمًا واضحًا (مثال: CMIS Bahrain). |
 | 2 | في تبويب **Instructions** الصق نسخة `instruction_prompt.md` الكاملة لضبط السلوك الأساسي. | في حقل **System Instruction** الصق المحتوى العربي لـ `instruction_prompt.md` للتأكد من اتباع تسلسل الوحدات. |
-| 3 | ضمن **Knowledge** ارفع الملفات: `instruction_prompt.md`, `instruction_addendum.md`, وملفات الوحدات `01` → `09`. | في قسم **Knowledge/References** ارفع الملفات نفسها وتأكد من تفعيل استخدامها في كل جلسة. |
+| 3 | ضمن **Knowledge** ارفع الملفات: `instruction_prompt.md`, `instruction_addendum_and_playbooks.md`, وملفات الوحدات `01` → `09`. | في قسم **Knowledge/References** ارفع الملفات نفسها وتأكد من تفعيل استخدامها في كل جلسة. |
 | 4 | حدّث خانة **Profile → Description/Goal** لتعكس وضع التشغيل (مثل: `full_strategy` أو `quick_draft`). | استخدم حقل **Goal** المدمج لتحديد الوضع الافتراضي (مثال: `full_strategy`) ويمكن إنشاء أهداف إضافية لكل سيناريو. |
 | 5 | أضف **Prompt Starters** من القوالب أدناه بحسب القناة لإرشاد المستخدمين الجدد. | أضف **Prompt Starters** في تبويب القنوات وحدد اللغة العربية المحلية لضمان المخرجات المناسبة. |
 | 6 | فعّل قدرات **Web Browsing** و **File Upload** لضمان الوصول للإنترنت واستقبال مرفقات العملاء. | فعّل خيارات **Web Access** و **File Handling**، وحدد تنسيقات الإخراج المفضلة (JSON، نص) لكل هدف. |
@@ -97,7 +97,7 @@ CMIS هو نظام ذكاء تسويقي توليدي بُني خصيصًا لت
 - عند التصحيح التلقائي، أظهر النص المنقح وتوثيق سبب التعديل.
 ```
 
-3. ضمن **Knowledge** (المرفقات) قم بتحميل `instruction_prompt.md` (البرومبت الرسمي المختصر)، `instruction_addendum.md` (التفاصيل التكميلية)، وجميع ملفات الوحدات `01_market_intel.md` حتى `09_content_planning.md` لتصبح مرجعًا للنموذج.
+3. ضمن **Knowledge** (المرفقات) قم بتحميل `instruction_prompt.md` (البرومبت الرسمي المختصر)، `instruction_addendum_and_playbooks.md` (التفاصيل التكميلية)، وجميع ملفات الوحدات `01_market_intel.md` حتى `09_content_planning.md` لتصبح مرجعًا للنموذج.
 4. (اختياري) أضف Prompt Starters لتسريع الاستخدام، مثل:
    - "بادر بتحليل سوق لخدمة الدفع بالتقسيط وولّد إعلانات Meta/Google".
    - "أنشئ خطة محتوى أسبوعية لحساب إنستقرام لمنتج صحي".
@@ -122,7 +122,7 @@ You are CMIS Orchestrator for Bahrain.
 - Auto-correct compliance issues and show sanitized_copy alongside reasons.
 ```
 
-3. أرفق ملفات المعرفة `instruction_prompt.md`، `instruction_addendum.md`، وملفات الوحدات `01_market_intel.md` إلى `09_content_planning.md` في خانة Knowledge أو References.
+3. أرفق ملفات المعرفة `instruction_prompt.md`، `instruction_addendum_and_playbooks.md`، وملفات الوحدات `01_market_intel.md` إلى `09_content_planning.md` في خانة Knowledge أو References.
 4. اضبط الهدف الافتراضي (Goal) مثل: `full_strategy` لتشغيل السلسلة الكاملة أو `quick_draft` للاختصار، بحسب الاستخدام المطلوب.
 5. **تشغيل مثال:** نفّذ الطلب التالي للحصول على إعلانات + سيناريو فيديو + تقرير امتثال:
 
@@ -144,7 +144,7 @@ You are CMIS Orchestrator for Bahrain.
 
 ## إدارة الإصدارات والمراجعة الدورية
 ### منهجية الترقيم
-- اعتمد نظام **Semantic Versioning (SemVer)** بصيغة `MAJOR.MINOR.PATCH` لجميع ملفات التشغيل (`instruction_prompt.md`, `instruction_addendum.md`, وحدات 01–09، وأي قوالب JSON).
+- اعتمد نظام **Semantic Versioning (SemVer)** بصيغة `MAJOR.MINOR.PATCH` لجميع ملفات التشغيل (`instruction_prompt.md`, `instruction_addendum_and_playbooks.md`, وحدات 01–09، وأي قوالب JSON).
 - زد رقم **MAJOR** عند إجراء تغييرات جوهرية تغيّر تدفق العمل أو تتطلب إعادة تدريب المستخدمين.
 - زد رقم **MINOR** عندما تضيف وحدات أو قدرات جديدة بدون كسر التوافق مع أسلوب العمل الحالي.
 - استخدم رقم **PATCH** للتنقيحات الصغرى (تصحيح أخطاء، تحسينات لغوية، تحديثات امتثال) التي لا تستلزم تغييرًا في إجراءات التشغيل.
@@ -154,7 +154,7 @@ You are CMIS Orchestrator for Bahrain.
 1. حدّد بداية كل ربع سنة في تقويم العمليات وعيّن مالكًا مسؤولًا عن المراجعة.
 2. اجمع ملاحظات فرق التسويق، الامتثال، وأصحاب المصلحة حول دقة المخرجات خلال الربع المنصرم.
 3. راجع المقاييس الأساسية (دقّة الامتثال، معدل قبول الحملات، زمن التنفيذ) لرصد أي تراجع يستدعي تحديث البرومبتات.
-4. حدّث `instruction_prompt.md` و `instruction_addendum.md` بما يلزم، ثم أعد اختبار سيناريوهين قياسيين (حملة متكاملة + مراجعة امتثال فقط) للتأكد من الاستقرار.
+4. حدّث `instruction_prompt.md` و `instruction_addendum_and_playbooks.md` بما يلزم، ثم أعد اختبار سيناريوهين قياسيين (حملة متكاملة + مراجعة امتثال فقط) للتأكد من الاستقرار.
 5. وثّق النتائج والإصدار الجديد، وشارك ملخصًا بالتحديثات في قنوات الاتصال الداخلية.
 
 ### قائمة تحقق لتقييم تحديث البرومبتات
@@ -229,9 +229,9 @@ You are CMIS Orchestrator for Bahrain.
 
 ## بنية الملفات
 - `instruction_prompt.md` — البرومبت الرسمي المختصر (≤7900 حرف).
-- `instruction_addendum.md` — تفاصيل تشغيل عامة ومراجع Parsing/Config.
+- `instruction_addendum_and_playbooks.md` — تفاصيل تشغيل عامة ومراجع Parsing/Config.
 - `01_market_intel.md` حتى `09_content_planning.md` — ملفات المعرفة المتخصصة لكل وحدة (السوق، الإقناع، الأطر، التكييف، الاختبار، الامتثال، التسليم، السيناريوهات، التخطيط).
-- ملف `help.md` القديم مؤرشف ويخص نسخة سابقة؛ هذا README هو مصدر الحقيقة الحالي.
+- ملف `operations_and_support.md` القديم مؤرشف ويخص نسخة سابقة؛ هذا README هو مصدر الحقيقة الحالي.
 
 ## خارطة طريق / مساهمة
 - افتح قضية (Issue) لأي تحسين مقترح، واشرح السياق والملفات المتأثرة.
@@ -243,5 +243,5 @@ You are CMIS Orchestrator for Bahrain.
 
 <!-- CMIS:START::READMEA_REFERENCES_2025 -->
 ## ملفات مهمة
-user_guide_simple.md · prompt_starters.yaml · testing_checklist.md · training_outline.md · trainer_guide.md · release_playbook.md · support_runbook.md
+user_and_training_guides.md · user_and_training_guides.md · quality_and_variations.md · user_and_training_guides.md · user_and_training_guides.md · operations_and_support.md · operations_and_support.md
 <!-- CMIS:END::READMEA_REFERENCES_2025 -->

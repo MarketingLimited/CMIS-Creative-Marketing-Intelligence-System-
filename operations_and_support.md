@@ -28,15 +28,15 @@
 <!-- CMIS:END::RELEASE_AND_SUPPORT -->
 
 <!-- CMIS:START::HELP_DOC -->
-**Archived** — الوثيقة تخص نسخة أقدم. راجع [instruction_prompt.md](instruction_prompt.md) و[README.md](README.md) للتعليمات الحالية ودليل التنقل السريع.
+**Archived** — الوثيقة تخص نسخة أقدم. راجع [instruction_prompt.md](instruction_prompt.md)، [instruction_addendum_and_playbooks.md](instruction_addendum_and_playbooks.md)، و[README.md](README.md) للتعليمات الحالية ودليل التنقل السريع.
 
-للحصول على سيناريوهات تشغيل متقدمة ومُلخّصات الاستخدام، راجع ملف [advanced_playbooks.md](advanced_playbooks.md).
+للحصول على سيناريوهات تشغيل متقدمة ومُلخّصات الاستخدام، راجع ملف [instruction_addendum_and_playbooks.md](instruction_addendum_and_playbooks.md).
 
 ## الأسئلة الشائعة (FAQ)
 ### كيف أحل مشكلات الإعداد الشائعة؟
 - تأكد من أن `instruction_prompt.md` لا يتجاوز 8,000 حرف قبل رفعه إلى المنصة.
 - ارفع جميع الملفات ضمن جلسة واحدة، ثم استخدم خيار **Replace** عند تحديث أي ملف لضمان تطابق النسخ.
-- إذا رفضت المنصة ملفًا كبيرًا، قسّم الوحدات أو استخدم نسخة مضغوطة ضمن `instruction_addendum.md`.
+- إذا رفضت المنصة ملفًا كبيرًا، قسّم الوحدات أو استخدم نسخة مضغوطة ضمن `instruction_addendum_and_playbooks.md`.
 
 ### ما حدود المعرفة الحالية للنظام؟
 - يعتمد CMIS على الملفات المرفوعة فقط؛ لا توجد قاعدة بيانات خارجية مدمجة.
