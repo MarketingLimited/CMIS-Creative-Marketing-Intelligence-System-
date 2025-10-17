@@ -286,7 +286,7 @@
 - صوت: #إعلان منطوق 0–3s + مستويات صوت متوازنة.
 - تخصيص: نسخة عامة + نسخة مخصصة (الاسم/الموقع/السلوك).
 - ثنائية اللغة: AR→EN ملخص 2–3 أسطر (عند الطلب).
-- امتثال: تقرير JSON وفق `internal_checklists.md`.
+- امتثال: تقرير JSON وفق `quality_and_variations.md`.
 <!-- CMIS:END::TEST_PRELAUNCH -->
 
 <!-- CMIS:START::TEST_POSTLAUNCH -->

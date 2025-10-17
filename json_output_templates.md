@@ -113,7 +113,7 @@
     "community_type": "ugc|egc|brand",
     "interactivity": "direct_cta|question|shop"
   },
-  "compliance_report_schema_ref": "internal_checklists.md § مخطط تقرير الامتثال (JSON)"
+  "compliance_report_schema_ref": "quality_and_variations.md § مخطط تقرير الامتثال (JSON)"
 }
 ```
 
@@ -954,7 +954,7 @@ glossary:
 
 <!-- CMIS:START::REFS_QUALITY -->
 ### مراجع الجودة والامتثال
-- راجع `internal_checklists.md` قبل الإخراج النهائي.
-- طبّق قواعد `variation_strategy.md` عند توليد تنويعات.
+- راجع `quality_and_variations.md` قبل الإخراج النهائي.
+- طبّق قواعد `quality_and_variations.md` عند توليد تنويعات.
 <!-- CMIS:END::REFS_QUALITY -->
 <!-- CMIS:END::MODULE_07_OUTPUT -->

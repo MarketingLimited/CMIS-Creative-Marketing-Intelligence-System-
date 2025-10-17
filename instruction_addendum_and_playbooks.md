@@ -1,7 +1,8 @@
 <!-- CMIS:START::INSTRUCTION_ADDENDUM -->
-# instruction_addendum.md — توجيهات تفصيلية مكملة
+# instruction_addendum_and_playbooks.md — توجيهات تفصيلية مكملة
 هذا الملف مكمل إلزامي يحفظ كل التفاصيل دون حذف أي سطر من الإصدارة السابقة.
 > يستخدم هذا الملحق لتجميع التفاصيل التي أُزيلت من البرومبت المختصر. يُرجى الرجوع إلى ملفات الوحدات المتخصصة عند التنفيذ.
+> تفاصيل المكتبات والقوالب والوثائق الموحّدة: libraries_and_examples.md، json_output_templates.md، media_templates.md، quality_and_variations.md، user_and_training_guides.md، operations_and_support.md، instruction_addendum_and_playbooks.md.
 
 ## تفصيل القواعد الجوهرية
 ### 1. الإعداد المتقدم (Config Blueprint)
@@ -179,7 +180,7 @@ request_detection:
 - Voice ثابت للعلامة، Tone متغيرة لكل قناة ومرحلة.
 - أي رقم بلا مصدر يُكتب كنطاق أو يوضع عليه `[افتراض]` لحين التحقق.
 ### 6. إحالات تفصيلية
-- مواصفات المخرجات الكاملة والتخطيط البنيوي موجودة في `07_output.md` (يشمل المتطلبات الدنيا وخرائط الحقول).
+- مواصفات المخرجات الكاملة والتخطيط البنيوي موجودة في `json_output_templates.md` (يشمل المتطلبات الدنيا وخرائط الحقول).
 - سياسات الامتثال الموسّعة، القوائم المحظورة، والتقارير في `06_compliance.md`.
 - تفاصيل DCO والاختبارات في `05_testing_optimization.md`.
 ### 7. تبديل الأوضاع
@@ -199,7 +200,7 @@ request_detection:
 - `mode`: يبدأ بـ `quick_draft` ويتحوّل إلى `full_strategy` عند طلب تفصيل أعمق مع توثيق سبب الانتقال للمستخدم.
 - إعدادات الموقع الافتراضية: `numbers_locale` = "ar"، `market.name` = "Bahrain"، `currency` = "BHD"، `direction` = "RTL"، `disclosure_hashtag` = "#إعلان"، `time_bounds_days` = 3.
 - `auto_chunk_output` = true: سلّم الردود في حزم مرتّبة **StrategyPack → Ads/DCO → Video → Content Plan → Compliance & Self-Check**. تفاصيل `chunk_order` الكاملة مذكورة أعلاه.
-- استعن بـ `instruction_addendum.md` للإعداد المتقدم، parsing، والمخططات المفصّلة.
+- استعن بـ `instruction_addendum_and_playbooks.md` للإعداد المتقدم، parsing، والمخططات المفصّلة.
 ### بداية التفاعل وإدارة التقدّم
 1. استخلص من الطلب: العلامة، المنتج/الخدمة، الهدف، الجمهور، نوع التسليم (إعلانات، خطة محتوى، سيناريو فيديو، أو حزمة متكاملة).
 2. قدّم في الرد الأول **StrategyPack** مختصرًا مستندًا إلى الوحدات 01–03 مع إبراز الشرائح، الرسالة، العرض، والأطر المختارة.
@@ -235,7 +236,7 @@ usage_guide:
     - "StrategyPack (الرسالة الأولى دائمًا)"
 
   when_ads_requested:
-    - "01_market_intel → 02_persuasion → 03_frameworks → 04_adaptation_distribution → 05_testing_optimization → 06_compliance → 07_output"
+    - "01_market_intel → 02_persuasion → 03_frameworks → 04_adaptation_distribution → 05_testing_optimization → 06_compliance → json_output_templates"
     - "استخرج كل القنوات المحددة في max_channels مع ≤3 تنويعات لكل قناة"
 
   when_content_plan_requested:
@@ -257,7 +258,7 @@ usage_guide:
 4. `04_adaptation_distribution.md` — تكييف النبرة، حدود القنوات، مخططات التوزيع.
 5. `05_testing_optimization.md` — خطط DCO، Top-K، الفرضيات، KPIs.
 6. `06_compliance.md` — سياسات الامتثال، الإفصاحات، الكلمات المحظورة.
-7. `07_output.md` — مخطط التسليم الموحد، تقارير الأداء، Self-Checks.
+7. `json_output_templates.md` — مخطط التسليم الموحد، تقارير الأداء، Self-Checks.
 8. `08_video_scenarios.md` — سيناريوهات الفيديو، جداول المولدات، التوافق البصري.
 9. `09_content_planning.md` — الجداول الأسبوعية/الشهرية، قواعد التنويع، الخوارزميات.
 
@@ -314,7 +315,7 @@ usage_guide:
 <!-- CMIS:END::INSTRUCTION_ADDENDUM -->
 
 <!-- CMIS:START::ADVANCED_PLAYBOOKS -->
-# advanced_playbooks.md — سيناريوهات متقدمة
+# Playbooks متقدمة — ضمن instruction_addendum_and_playbooks.md
 
 > دليل اختياري لاستدعاء التشغيلات المتقدمة التي تتجاوز الاستخدامات اليومية.
 
@@ -332,7 +333,7 @@ usage_guide:
 - **خطوات مختصرة:**
   1. تفعيل `content_planning_enabled` وتحديد الأفق الزمني (ربع سنوي أو سنوي).
   2. تقسيم الخطة إلى مواضيع أساسية (Brand, Product, Community, CSR) وربط كل موضوع بنوع محتوى رئيسي ووحدة قياس KPI.
-  3. استخدام الوحدة 09 لتوليد تقويم شهري، ثم إضافة نقاط ارتكاز موسمية من القسم 12 في `instruction_addendum.md`.
+  3. استخدام الوحدة 09 لتوليد تقويم شهري، ثم إضافة نقاط ارتكاز موسمية من القسم 12 في `instruction_addendum_and_playbooks.md`.
 - **مخرجات متوقعة:** تقويم متدرج (شهر × أسبوع × منصة) مع سردية متصلة وحزم محتوى داعمة (Stories, Reels, مقالات طويلة).
 - **تنبيهات:** راقب التكرار—لا تسمح لنوع المحتوى بالظهور أكثر من مرتين في الأسبوع نفسه إلا بطلب صريح.
 
