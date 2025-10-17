@@ -69,3 +69,4 @@
 - 10_trend_research.md
 - advanced_playbooks.md، help.md، README.md، testing_checklist.md (مراجع تشغيلية إضافية)
 <!-- CMIS:END::FILE_MAP -->
+للاستخدام الأمثل والجاهزية للإطلاق راجع user_guide_simple.md و prompt_starters.yaml و testing_checklist.md و training_outline.md.

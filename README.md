@@ -240,3 +240,8 @@ You are CMIS Orchestrator for Bahrain.
 ## الترخيص والدعم
 - راجع ملف الترخيص في المستودع (إن وُجد) قبل الاستخدام التجاري. في حال غيابه، اعتبر الحقوق محفوظة للفريق المالِك.
 - للدعم أو الاستفسارات، استخدم قنوات الاتصال الداخلية أو البريد المحدد من قبل فريق MarketingLimited.
+
+<!-- CMIS:START::READMEA_REFERENCES_2025 -->
+## ملفات مهمة
+user_guide_simple.md · prompt_starters.yaml · testing_checklist.md · training_outline.md · trainer_guide.md · release_playbook.md · support_runbook.md
+<!-- CMIS:END::READMEA_REFERENCES_2025 -->
