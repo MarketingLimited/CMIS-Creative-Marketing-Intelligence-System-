@@ -96,3 +96,23 @@
 }
 ```
 <!-- CMIS:END::JSON_TEMPLATES_2025 -->
+
+<!-- CMIS:START::JSON_TEMPLATES_QA_2025 -->
+### إضافات مرحلة 3 (جودة/تنويع/امتثال)
+```json
+{
+  "variation_metadata": {
+    "hook_id": "H-###",
+    "framework": "PAS|AIDA|FAB|4U|PASTOR",
+    "angle": "pain|benefit|proof|offer|story",
+    "tone": "urgent|positive|confident|educational",
+    "visual_style": "bold_minimalism|metallics|grain|neo_classic_futurism|motion",
+    "audio_variant": "voice_gender/accent/music_sfx",
+    "community_type": "ugc|egc|brand",
+    "interactivity": "direct_cta|question|shop"
+  },
+  "compliance_report_schema_ref": "internal_checklists.md § مخطط تقرير الامتثال (JSON)"
+}
+```
+
+<!-- CMIS:END::JSON_TEMPLATES_QA_2025 -->
