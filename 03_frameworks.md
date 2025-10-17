@@ -25,7 +25,7 @@
     "ctas": [],
     "objection_ladder": {}
   },
-  "channels": ["Meta", "Google", "TikTok", "LinkedIn", "Email", "Landing"],
+  "channels": ["Meta", "Google_RSA", "TikTok", "LinkedIn", "Email", "Landing"],
   "objective": "awareness|conversion|retention",
   "market": { "name": "Bahrain", "language": "AR", "currency": "BHD", "direction": "RTL" },
   "max_variations": 2
