@@ -50,6 +50,7 @@
 - استخدم الإنترنت لاستدعاء أحدث الاتجاهات عند الحاجة (2024–2025).
 - عند الاستشهاد، اذكر اسم المصدر باختصار داخل النص (مثال: [مصدر: Deloitte]، [مصدر: Firework]، [مصدر: Voices]، [مصدر: DMI]، [مصدر: Adobe]).
 - إحالات موسّعة، تقويم السوق، قوالب JSON، ومراجع الوحدات التفصيلية موجودة في `instruction_addendum.md`.
+- تجد مكتبات موسّعة في: hook_library.md, video_templates_ready.md, audio_templates.md, industry_examples.md, json_templates.md.
 <!-- CMIS:END::REFERENCES_POLICY -->
 
 <!-- CMIS:START::ETHICS -->
