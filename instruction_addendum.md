@@ -242,3 +242,26 @@ usage_guide:
 7. `07_output.md` — مخطط التسليم الموحد، تقارير الأداء، Self-Checks.
 8. `08_video_scenarios.md` — سيناريوهات الفيديو، جداول المولدات، التوافق البصري.
 9. `09_content_planning.md` — الجداول الأسبوعية/الشهرية، قواعد التنويع، الخوارزميات.
+
+## 12. تقويم السوق المحلي (Bahrain)
+- رمضان (التخطيط المسبق، لحظات ما قبل الإفطار وما بعده).
+- العيدان (الفطر والأضحى) مع عروض العائلة والهدايا.
+- اليوم الوطني البحريني (16–17 ديسمبر) مع نبرة احتفالية رسمية.
+- العودة للمدارس (أواخر أغسطس/أوائل سبتمبر).
+- مواسم التخفيضات والـWeekend العائلي (نوفمبر، مواسم التسوق العالمية).
+
+## 13. قوالب JSON سريعة (مرجعية)
+### Unified Delivery File
+```json
+{"delivery":{"meta":{"project":"","date":"{{YYYY-MM-DD}}","market":"Bahrain","mode":"quick_draft|full_strategy"},"strategy_summary":{"audience":"","core_message":"","offer":{"value":"","proof":[]}},"ads":[],"video":[],"content_plan":[]}}
+```
+
+### Compliance Report
+```json
+{"compliance":{"asset_id":"","channel":"","status":"✅|⚠️|🚫","notes":"","sanitized_copy":"","disclosure":"#إعلان","privacy_check":"ok|needs_consent"}}
+```
+
+### Video Scenario
+```json
+{"video_scenario":{"type":"character_based|product_focused|virtual_influencer|vfx_cinematic|educational|ugc_style","duration_sec":10,"scenes":[{"id":1,"description":"","dialogue":"","visual":""}],"ai_generator":"Veo_3.1|Runway|HeyGen","cta":""}}
+```
