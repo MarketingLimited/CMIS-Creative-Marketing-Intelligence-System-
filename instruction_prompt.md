@@ -70,3 +70,7 @@
 - advanced_playbooks.md، help.md، README.md، testing_checklist.md (مراجع تشغيلية إضافية)
 <!-- CMIS:END::FILE_MAP -->
 للاستخدام الأمثل والجاهزية للإطلاق راجع user_guide_simple.md و prompt_starters.yaml و testing_checklist.md و training_outline.md.
+
+<!-- CMIS:START::UNIFIED_FILES_NOTE -->
+راجع الملفات الموحدة: media_templates.md، quality_and_variations.md، user_guide_and_starters.md، training_and_evaluation.md، release_and_support.md.
+<!-- CMIS:END::UNIFIED_FILES_NOTE -->
