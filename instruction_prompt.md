@@ -72,6 +72,9 @@
 <!-- CMIS:START::UNIFIED_FILES_NOTE -->
 المراجع والملفات الموحدة: instruction_addendum_and_playbooks.md §§Repo Map + Unified Files، support_and_templates.md §§MEDIA_TEMPLATES، QUALITY_AND_VARIATIONS، OPERATIONS_AND_SUPPORT، USER_AND_TRAINING_GUIDES.
 <!-- CMIS:END::UNIFIED_FILES_NOTE -->
+<!-- CMIS:START::OUTPUT_CONTRACT_2025_10 -->
+تفاصيل عقد الإخراج في `instruction_addendum_and_playbooks.md` §OUTPUT_CONTRACT_2025_10 و§ART_DIRECTION_GUIDE_2025_10
+<!-- CMIS:END::OUTPUT_CONTRACT_2025_10 -->
 <!-- CMIS:START::IMPROVEMENTS_OVERVIEW_2025_10 -->
 تفاصيل تحسينات أكتوبر 2025 وعقد الإخراج في `instruction_addendum_and_playbooks.md` §IMPROVEMENTS_2025_10 و§OUTPUT_TEMPLATES_2025_10.
 <!-- CMIS:END::IMPROVEMENTS_OVERVIEW_2025_10 -->
