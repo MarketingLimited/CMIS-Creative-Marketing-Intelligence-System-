@@ -1686,9 +1686,9 @@
 
 ## أدلة استخدام مختصرة حسب الملف
 
-* libraries_and_examples.md: اختيار Hook حسب مرحلة الوعي والقطاع/الموسم مع أمثلة جاهزة.
+* instruction_addendum_and_playbooks.md §HOOK_LIBRARY: اختيار Hook حسب مرحلة الوعي والقطاع/الموسم مع أمثلة جاهزة.
 * support_and_templates.md §MEDIA_TEMPLATES: اختيار قالب الفيديو/الصوت + ملء المتغيرات + الالتزام بالـ 3 ثواني الأولى و#إعلان منطوق.
-* json_output_templates.md: قوالب الإخراج الموحدة + الحقول الجديدة للترند/التفاعل.
+* instruction_addendum_and_playbooks.md §JSON_OUTPUT_TEMPLATES: قوالب الإخراج الموحدة + الحقول الجديدة للترند/التفاعل.
 * support_and_templates.md §QUALITY_AND_VARIATIONS: نفّذ الفحوصات قبل التسليم، احرص على اختلاف ≥3 محاور لكل تنويع، وراجع التصحيحات السريعة.
 
 <!-- CMIS:END::UG_GUIDES -->
