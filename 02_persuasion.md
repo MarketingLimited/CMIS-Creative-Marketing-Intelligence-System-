@@ -51,8 +51,9 @@
 4. إنتاج المخرجات وفق القالب أدناه.
 
 <!-- CMIS:START::MIXER_STEP -->
-- بعد تلخيص المدخلات، ابنِ **مصفوفات** من الحقول (تدعم تعدد القيم لكل حقل + افتراضات عند الحاجة)،  
-  وولّد **6–12 نموذجًا** عبر المزج الذكي (تنويع trigger, framework, strategy, tone, awareness/funnel).  
+- بعد تلخيص المدخلات، ابنِ **مصفوفات** من الحقول (تدعم تعدد القيم لكل حقل + افتراضات عند الحاجة)،
+  وولّد **3 تنويعات أساسية** (v1–v3) تغطي Pain/PAS، Benefit/AIDA، Proof/FAB مع اختلاف ≥3 محاور (trigger, framework, strategy, tone, awareness/funnel).
+  - إذا فُعّل وضع DCO Expansion وفق `instruction_prompt.md` Stage B (طلب صريح أو قناة ديناميكية)، أضف مجموعة توسعة (v4 فما فوق) للوصول إلى 6–12 تنويعًا مع تبرير التفعيل داخل `used_fields.notes`.
   لكل نموذج: اطبع `used_fields` و`design_description` و`compliance`.
 <!-- CMIS:END::MIXER_STEP -->
 
