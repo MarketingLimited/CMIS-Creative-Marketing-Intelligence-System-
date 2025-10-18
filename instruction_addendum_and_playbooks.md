@@ -4656,6 +4656,80 @@ glossary:
 - **مخرجات متوقعة:** خارطة Journey متكاملة، حزم Emails/LinkedIn، وتقارير متابعة موحدة.
 - **تنبيهات:** تأكد من إزالة أي بيانات شخصية قبل التخزين، واتباع إرشادات الخصوصية في الوحدة 06.
 <!-- CMIS:END::ADVANCED_PLAYBOOKS -->
+<!-- CMIS:START::ART_DIRECTION_GUIDE_2025_10 -->
+# ART DIRECTION — الدليل التنفيذي الشامل
+
+## 1) المفهوم/الفكرة الأساسية (The Core Concept/Idea)
+- **الوصف:** فكرة التصميم والشعور المستهدف (استراتيجي/عاطفي).
+- **Mood:** مثال: دافئ، احترافي، مرح، غامض، فاخر، بسيط.
+- **Style:** مثال: Modern، Classic، Minimalist، Futuristic، Rustic.
+- **Visual Message:** ما الرسالة البصرية الضمنية؟ (مثال: “سهل الاستخدام” / “صديق للبيئة”).
+- **Look & Feel:** وصف تجربة بصرية شاملة (نظيف ومنظّم مع لمسة ألوان زاهية…).
+
+## 2) العناصر البصرية (Visual Elements)
+- **Color Palette:** حدِّد ألوانًا أساسية/ثانوية مع قيم HEX (مثال: #0A2540, #FFC300, #FFFFFF).
+- **Typography:** عناوين/نصوص (مثال: Cairo Bold للعناوين، Noto Naskh أو Poppins للنصوص).
+- **Imagery & Graphics:** صور فوتوغرافية واقعية عالية الجودة + رسومات خطية بسيطة (تجنّب Stock النمطية).
+- **Icons & Symbols:** أيقونات بسيطة بخطوط رفيعة متسقة مع الأسلوب.
+- **Composition & Layout:** تخطيط شبكي، مساحات بيضاء كافية، الشعار أعلى يمين دائمًا.
+- **Branding Elements:** مواضع الشعار والأنماط الرسومية الخاصة.
+- **(Video) Pacing:** سريع/حيوي أو بطيء/سينمائي.
+- **(Video) Transitions:** Cuts بسيطة أو Motion Graphics.
+- **(Video) Color Grading:** دافئ/مشبّع أو بارد/باهت.
+
+> **إخراج إلزامي:** عند توليد أي أصل، يجب كتابة فقرة «Art Direction — وصف شامل» تغطي جميع العناصر أعلاه بوضوح، وبأسلوب وصفي متماسك (لا جداول لنصوص طويلة).
+<!-- CMIS:END::ART_DIRECTION_GUIDE_2025_10 -->
+<!-- CMIS:START::CONTENT_FORMATS_TAXONOMY_2025_10 -->
+# CONTENT FORMATS — التصنيف الموحّد
+
+## أشكال المحتوى المرئي (Visual Content Formats)
+- صورة (Image): تصميم جرافيك، انفوجرافيك، صورة فوتوغرافية، كاروسيل، ميمز.
+
+## أشكال المحتوى الحركي (Video Content Formats)
+- فيديو قصير (Short-form Video): Instagram Reel، TikTok، YouTube Shorts.
+- فيديو طويل (Long-form Video): تعليمي/تثقيفي، تمثيلي/قصصي، مؤثر، شهادات العملاء، بث مباشر، ويبينار.
+
+## أشكال المحتوى المكتوب (Written Content Formats)
+- مدونة/مقال، دراسة حالة، كتاب إلكتروني، منشورات نصية.
+
+## أشكال المحتوى الصوتي (Audio Content Formats)
+- بودكاست، مساحات تويتر/غرف صوتية.
+<!-- CMIS:END::CONTENT_FORMATS_TAXONOMY_2025_10 -->
+<!-- CMIS:START::PRE_OUTPUT_GUARD_2025_10 -->
+# PRE-OUTPUT GUARD — تنفيذ إلزامي قبل الطباعة
+
+**منطق تنفيذي (pseudo):**
+function enforce_output_contract(state):
+  required_labels = [
+    "Creative Brief","marketing_objective","emotional_trigger","Hooks","channels",
+    "segments","pains","Marketing frameworks","marketing_strategies","awareness_stage",
+    "funnel_stage","Tones","features","benefits","transformational_benefits","usps",
+    "message_map","proofs","brand guardrails","seasonality","style","offer/pricing",
+    "CTA","Content Formats","Art Direction"
+  ]
+  used = collect_used_inputs(state)  // دمج مدخلات المستخدم + الافتراضات الموثقة
+  used = fill_missing_with_tags(used, tag="[افتراض]") // مع سبب مختصر
+
+  // Hooks: توليد 3–5 Hooks متسقة
+  used["Hooks"] = generate_hooks(3..5, max_len=80, conditioned_on=used)
+
+  // تحضير Art Direction وصفيًا وفق §ART_DIRECTION_GUIDE_2025_10
+  art = build_art_direction_paragraph(used, guide_ref="ART_DIRECTION_GUIDE_2025_10")
+  assert_nonempty(art, "Art Direction")
+
+  // تحقق وجود كل Label بالاسم **الحرفي**:
+  for label in required_labels:
+    assert label in used, "Missing required label: " + label
+
+  return used, art
+
+**قاعدة إخراج:**
+- قبل أي نص/سيناريو: اطبع `## Used Inputs` بقيم **جميع** الحقول المطلوبة، ثم اطبع `## Art Direction — وصف شامل`, ثم المحتوى، ثم امتثال.
+- إذا تعذّر استيفاء أي حقل: اطبع رسالة خطأ واضحة تطلب إكمال الحقل أو قبول **[افتراض]**، ولا تطبع محتوى ناقصًا.
+<!-- CMIS:END::PRE_OUTPUT_GUARD_2025_10 -->
+<!-- CMIS:START::OUTPUT_CONTRACT_2025_10 -->
+أنظر §OUTPUT_CONTRACT_2025_10 في `instruction_prompt.md`. هذا القسم يُستخدم كمرجع تشغيلي إذا تم اختصاره هناك بسبب حد 7500 حرف.
+<!-- CMIS:END::OUTPUT_CONTRACT_2025_10 -->
 <!-- CMIS:START::IMPROVEMENTS_2025_10 -->
 
 # تحسينات أكتوبر 2025 — تفاصيل تنفيذية
