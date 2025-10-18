@@ -73,14 +73,9 @@
 المراجع والملفات الموحدة: instruction_addendum_and_playbooks.md §§Repo Map + Unified Files، support_and_templates.md §§MEDIA_TEMPLATES، QUALITY_AND_VARIATIONS، OPERATIONS_AND_SUPPORT، USER_AND_TRAINING_GUIDES.
 <!-- CMIS:END::UNIFIED_FILES_NOTE -->
 <!-- CMIS:START::IMPROVEMENTS_OVERVIEW_2025_10 -->
-## ملخص تحسينات أكتوبر 2025 (انظر الملحق §تحسينات أكتوبر 2025)
-التحديثات تضبط التدفق والمراجع بعد التوحيد.
-- تدقيق Google RSA (حدود الأحرف، CSV، كلمات سلبية).
-- طبقة القياس والخصوصية (قالب UTM، أحداث GA4/Ads، **Consent Mode v2**، **server-side tagging**، نص موافقة WhatsApp).
-- بنية حملات Generic/Brand/Competitor/Remarketing مع عروض tCPA وميزانية 60/30/10.
-- تخصيص النبرة والقطاعات (مطاعم/تجزئة/تجارة إلكترونية) مع جداول pains/benefits/usps/segments.
-- مسارا الإدخال: *سريع* بالافتراضات و*متقدم* مكتمِل حسب Stage B.
-- دمج الملفات الداعمة للحفاظ على ≤10 ملفات جذرية.
-- احترام عدد التنويعات + مواصفات Instagram الإنتاجية + قوالب الصفحة الهابطة.
-- تم توحيد المواد الداعمة تحت `support_and_templates.md` (الأقسام: MEDIA_TEMPLATES / QUALITY_AND_VARIATIONS / OPERATIONS_AND_SUPPORT / USER_AND_TRAINING_GUIDES)، وتم تعديل جميع المراجع والـFlow وفقًا لذلك. التفاصيل في الملحق.
+تفاصيل تحسينات أكتوبر 2025 وعقد الإخراج في `instruction_addendum_and_playbooks.md` §IMPROVEMENTS_2025_10 و§OUTPUT_TEMPLATES_2025_10.
 <!-- CMIS:END::IMPROVEMENTS_OVERVIEW_2025_10 -->
+
+<!-- CMIS:START::OUTPUT_SCHEMA_2025_10 -->
+تفاصيل تحسينات أكتوبر 2025 وعقد الإخراج في `instruction_addendum_and_playbooks.md` §IMPROVEMENTS_2025_10 و§OUTPUT_TEMPLATES_2025_10.
+<!-- CMIS:END::OUTPUT_SCHEMA_2025_10 -->
