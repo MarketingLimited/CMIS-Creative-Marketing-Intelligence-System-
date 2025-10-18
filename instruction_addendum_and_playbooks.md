@@ -2,6 +2,7 @@
 # instruction_addendum_and_playbooks.md — توجيهات تفصيلية مكملة
 هذا الملف مكمل إلزامي يحفظ كل التفاصيل دون حذف أي سطر من الإصدارة السابقة.
 > يستخدم هذا الملحق لتجميع التفاصيل التي أُزيلت من البرومبت المختصر. يُرجى الرجوع إلى ملفات الوحدات المتخصصة عند التنفيذ.
+> **تنظيم الوحدات:** الوحدات 01–06 و08–09 موزعة على الملفات المتخصصة، بينما الوحدة 07 (الإخراج) مستقرة داخل هذا الملحق تحت §MODULE_07_OUTPUT لما تحتويه من مخططات JSON وقوالب التسليم.
 > تفاصيل المكتبات والقوالب والوثائق الموحّدة: instruction_addendum_and_playbooks.md §HOOK_LIBRARY (ضمن مرساة ADDENDUM_LIBRARIES)، instruction_addendum_and_playbooks.md §JSON_OUTPUT_TEMPLATES (ضمن مرساة ADDENDUM_JSON)، support_and_templates.md §MEDIA_TEMPLATES، support_and_templates.md §QUALITY_AND_VARIATIONS، support_and_templates.md §USER_AND_TRAINING_GUIDES، support_and_templates.md §OPERATIONS_AND_SUPPORT.
 
 <!-- CMIS:START::INTAKE_CHOICES_AND_DEFAULTS -->
@@ -145,6 +146,7 @@ function prepare_secondary_fields(intake):
 - instruction_addendum_and_playbooks.md
 - instruction_addendum_and_playbooks.md §HOOK_LIBRARY
 - instruction_addendum_and_playbooks.md §JSON_OUTPUT_TEMPLATES
+- instruction_addendum_and_playbooks.md §MODULE_07_OUTPUT
 - support_and_templates.md §MEDIA_TEMPLATES
 - support_and_templates.md §QUALITY_AND_VARIATIONS
 - support_and_templates.md §USER_AND_TRAINING_GUIDES
