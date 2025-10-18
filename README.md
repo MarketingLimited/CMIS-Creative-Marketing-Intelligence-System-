@@ -8,7 +8,10 @@ CMIS هو نظام ذكاء تسويقي توليدي بُني خصيصًا لت
 ابدأ مع CMIS عبر الخطوات التالية المصمّمة للمستخدمين الجدد. *(لا تتوفر حاليًا لقطات شاشة داخل المستودع؛ أضف صورًا إلى هذا القسم عند تجهيزها لدعم التوجّه البصري.)*
 
 1. **استنساخ المستودع وتنظيم الملفات:**
-   - نفّذ `git clone` أو حمّل الأرشيف، ثم تأكد من بقاء الملفات الرئيسة (`instruction_prompt.md`, `instruction_addendum_and_playbooks.md`, والوحدات `01`–`09`) ضمن المجلد ذاته.
+   - نفّذ `git clone` أو حمّل الأرشيف، ثم تأكد من بقاء الملفات الرئيسة ضمن المجلد ذاته:
+     - `instruction_prompt.md`
+     - `instruction_addendum_and_playbooks.md` (يتضمن الوحدة 07 «Output» بالكامل)
+     - ملفات الوحدات المدمجة: `01_market_intel.md`, `02_persuasion.md`, `03_frameworks.md`, `04_adaptation_distribution.md`, `05_06_testing_and_compliance.md` (Modules 05 & 06)، `08_09_video_and_content.md` (Modules 08 & 09)
 2. **قراءة دليل التشغيل الأساسي:**
    - استعرض `instruction_prompt.md` لفهم التسلسل الإجرائي، ثم راجع `instruction_addendum_and_playbooks.md` لتفاصيل السوق والقوالب الجاهزة.
 3. **ضبط GPT أو Gem جديد:**
@@ -22,9 +25,9 @@ CMIS هو نظام ذكاء تسويقي توليدي بُني خصيصًا لت
 
 ## دليل توجيهي مختصر
 - للاطلاع على التسلسل التشغيلي الكامل انتقل إلى [`instruction_prompt.md`](instruction_prompt.md) بوصفه مصدر الحقيقة اليومي.
-- للحصول على القوالب المتقدمة وسيناريوهات الاستخدام، راجع [`instruction_addendum_and_playbooks.md`](instruction_addendum_and_playbooks.md) (يتضمن محتوى الملحق وPlaybooks المتقدمة في ملف موحّد).
-- إذا احتجت الوحدات المتخصصة (01–09)، ستجد كل وحدة في ملفها المرقم مثل [`01_market_intel.md`](01_market_intel.md).
-- يظل هذا README المرجع التوجيهي الحي؛ تم حذف الملف المؤرشف `main.md` بعد نقل محتواه إلى الأقسام أعلاه.
+- للحصول على القوالب المتقدمة وسيناريوهات الاستخدام، راجع [`instruction_addendum_and_playbooks.md`](instruction_addendum_and_playbooks.md) (يتضمن محتوى الملحق وPlaybooks المتقدمة في ملف موحّد، إضافة إلى الوحدة 07).
+- إذا احتجت الوحدات المتخصصة، فاعتمد التوزيع الموحّد الحالي: ملفات منفصلة للوحدات 01–04، ملف مشترك للوحدتين 05 و06 (`05_06_testing_and_compliance.md`)، ملف مشترك للوحدتين 08 و09 (`08_09_video_and_content.md`)، بينما الوحدة 07 («Output») مستقرة داخل `instruction_addendum_and_playbooks.md` §MODULE_07_OUTPUT.
+- يظل هذا README المرجع التوجيهي الحي؛ بعد دمج الملفات القديمة أُعيد تنظيم المحتوى داخل الأقسام الحالية الموضحة أعلاه.
 
 ## المتطلبات المسبقة
 - حساب ChatGPT يتيح إنشاء GPTs مخصصة.
@@ -37,7 +40,7 @@ CMIS هو نظام ذكاء تسويقي توليدي بُني خصيصًا لت
 | --- | --- | --- |
 | 1 | ادخل إلى **ChatGPT → Explore → Create a GPT** واختر خيار البدء من الصفر. | افتح **Gemini AI Studio → Create a new Gem** وعيّن اسمًا واضحًا (مثال: CMIS Bahrain). |
 | 2 | في تبويب **Instructions** الصق نسخة `instruction_prompt.md` الكاملة لضبط السلوك الأساسي. | في حقل **System Instruction** الصق المحتوى العربي لـ `instruction_prompt.md` للتأكد من اتباع تسلسل الوحدات. |
-| 3 | ضمن **Knowledge** ارفع الملفات: `instruction_prompt.md`, `instruction_addendum_and_playbooks.md`, وملفات الوحدات `01` → `09`. | في قسم **Knowledge/References** ارفع الملفات نفسها وتأكد من تفعيل استخدامها في كل جلسة. |
+| 3 | ضمن **Knowledge** ارفع الملفات: `instruction_prompt.md`, `instruction_addendum_and_playbooks.md` (بما فيها الوحدة 07)، `01_market_intel.md`, `02_persuasion.md`, `03_frameworks.md`, `04_adaptation_distribution.md`, `05_06_testing_and_compliance.md`, `08_09_video_and_content.md`. | في قسم **Knowledge/References** ارفع الملفات نفسها وتأكد من تفعيل استخدامها في كل جلسة. |
 | 4 | حدّث خانة **Profile → Description/Goal** لتعكس وضع التشغيل (مثل: `full_strategy` أو `quick_draft`). | استخدم حقل **Goal** المدمج لتحديد الوضع الافتراضي (مثال: `full_strategy`) ويمكن إنشاء أهداف إضافية لكل سيناريو. |
 | 5 | أضف **Prompt Starters** من القوالب أدناه بحسب القناة لإرشاد المستخدمين الجدد. | أضف **Prompt Starters** في تبويب القنوات وحدد اللغة العربية المحلية لضمان المخرجات المناسبة. |
 | 6 | فعّل قدرات **Web Browsing** و **File Upload** لضمان الوصول للإنترنت واستقبال مرفقات العملاء. | فعّل خيارات **Web Access** و **File Handling**، وحدد تنسيقات الإخراج المفضلة (JSON، نص) لكل هدف. |
@@ -98,7 +101,7 @@ CMIS هو نظام ذكاء تسويقي توليدي بُني خصيصًا لت
 ```
 
 <!-- CMIS:START::README_CHATGPT_KNOWLEDGE -->
-3. ضمن **Knowledge** (المرفقات) قم بتحميل `instruction_prompt.md` (البرومبت الرسمي المختصر)، `instruction_addendum_and_playbooks.md` (التفاصيل التكميلية)، وجميع ملفات الوحدات `01_market_intel.md` حتى `08_09_video_and_content.md §MODULE_09` لتصبح مرجعًا للنموذج.
+3. ضمن **Knowledge** (المرفقات) قم بتحميل `instruction_prompt.md` (البرومبت الرسمي المختصر)، `instruction_addendum_and_playbooks.md` (التفاصيل التكميلية + الوحدة 07)، وملفات الوحدات المتاحة (`01_market_intel.md`, `02_persuasion.md`, `03_frameworks.md`, `04_adaptation_distribution.md`, `05_06_testing_and_compliance.md`, `08_09_video_and_content.md`).
 <!-- CMIS:END::README_CHATGPT_KNOWLEDGE -->
 4. (اختياري) أضف Prompt Starters لتسريع الاستخدام، مثل:
    - "بادر بتحليل سوق لخدمة الدفع بالتقسيط وولّد إعلانات Meta/Google".
@@ -125,7 +128,7 @@ You are CMIS Orchestrator for Bahrain.
 ```
 
 <!-- CMIS:START::README_GEMINI_KNOWLEDGE -->
-3. أرفق ملفات المعرفة `instruction_prompt.md`، `instruction_addendum_and_playbooks.md`، وملفات الوحدات `01_market_intel.md` إلى `08_09_video_and_content.md §MODULE_09` في خانة Knowledge أو References.
+3. أرفق ملفات المعرفة `instruction_prompt.md`، `instruction_addendum_and_playbooks.md` (متضمنة الوحدة 07)، ووثائق الوحدات المدمجة (`01_market_intel.md`, `02_persuasion.md`, `03_frameworks.md`, `04_adaptation_distribution.md`, `05_06_testing_and_compliance.md`, `08_09_video_and_content.md`) في خانة Knowledge أو References.
 <!-- CMIS:END::README_GEMINI_KNOWLEDGE -->
 4. اضبط الهدف الافتراضي (Goal) مثل: `full_strategy` لتشغيل السلسلة الكاملة أو `quick_draft` للاختصار، بحسب الاستخدام المطلوب.
 5. **تشغيل مثال:** نفّذ الطلب التالي للحصول على إعلانات + سيناريو فيديو + تقرير امتثال:
@@ -233,9 +236,9 @@ You are CMIS Orchestrator for Bahrain.
 
 ## بنية الملفات
 - `instruction_prompt.md` — البرومبت الرسمي المختصر (≤7900 حرف).
-- `instruction_addendum_and_playbooks.md` — تفاصيل تشغيل عامة ومراجع Parsing/Config.
+- `instruction_addendum_and_playbooks.md` — تفاصيل تشغيل عامة ومراجع Parsing/Config (وتضمين كامل للوحدة 07: OUTPUT).
 <!-- CMIS:START::README_FILE_LIST -->
-- `01_market_intel.md` حتى `08_09_video_and_content.md §MODULE_09` — ملفات المعرفة المتخصصة لكل وحدة (السوق، الإقناع، الأطر، التكييف، الاختبار، الامتثال، التسليم، السيناريوهات، التخطيط).
+- ملفات المعرفة المتخصصة حسب التوزيع الحالي: `01_market_intel.md`, `02_persuasion.md`, `03_frameworks.md`, `04_adaptation_distribution.md`, `05_06_testing_and_compliance.md` (MODULE_05 + MODULE_06)، `08_09_video_and_content.md` (MODULE_08 + MODULE_09).
 <!-- CMIS:END::README_FILE_LIST -->
 - ملف `support_and_templates.md §OPERATIONS_AND_SUPPORT` القديم مؤرشف ويخص نسخة سابقة؛ هذا README هو مصدر الحقيقة الحالي.
 

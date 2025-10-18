@@ -1682,7 +1682,7 @@
 # 🎯 دليل البدء السريع — CMIS (2025)
 
 - الهدف: تمكين أي مستخدم من إنجاز حملة أو محتوى خلال دقائق، مع امتثال كامل (#إعلان/BHD/RTL).
-- نِطاق الملفات: instruction_prompt.md + 01_market_intel.md + 02_persuasion.md + 03_frameworks.md + 04_adaptation_distribution.md + 05_06_testing_and_compliance.md + instruction_addendum_and_playbooks.md (تضم الوحدة 07) + 08_09_video_and_content.md + المكتبات (hooks/video/audio/industry/json) + الجودة.
+- نِطاق الملفات: instruction_prompt.md + 01_market_intel.md + 02_persuasion.md + 03_frameworks.md + 04_adaptation_distribution.md + 05_06_testing_and_compliance.md + instruction_addendum_and_playbooks.md (تضم الوحدة 07) + 08_09_video_and_content.md، مع مكتبات hooks/video/audio/industry/json مدمجة داخل `instruction_addendum_and_playbooks.md §§HOOK_LIBRARY + JSON_OUTPUT_TEMPLATES` وأقسام الجودة في هذا الملف (`support_and_templates.md` §§MEDIA_TEMPLATES, QUALITY_AND_VARIATIONS, USER_AND_TRAINING_GUIDES, OPERATIONS_AND_SUPPORT).
 <!-- CMIS:END::UG_HEADER -->
 
 <!-- CMIS:START::UG_WORKFLOWS -->
@@ -1832,7 +1832,7 @@ general:
 <!-- CMIS:START::TRAINER_GUIDE -->
 <!-- CMIS:START::TRAINER_GUIDE -->
 # 🎓 دليل المدرّب — CMIS
-- كيفية تحديث المكتبات شهريًا (hooks/video/audio/industry).
+- كيفية تحديث المكتبات الشهرية داخل `instruction_addendum_and_playbooks.md §HOOK_LIBRARY`، وتحديث قوائم الفيديو/الصوت/الصناعة وحقول JSON ضمن أقسام `support_and_templates.md` (§MEDIA_TEMPLATES، §QUALITY_AND_VARIATIONS، §USER_AND_TRAINING_GUIDES).
 - سياسة الأخلاقيات والخصوصية، وكيفية فحص الإفصاحات.
 - جمع التغذية الراجعة وتوثيقها، وآلية قبول/رفض التعديلات.
 <!-- CMIS:END::TRAINER_GUIDE -->
