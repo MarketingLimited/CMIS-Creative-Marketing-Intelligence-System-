@@ -23,6 +23,54 @@
 
 **توجيه إلزامي عند تفعيل «استمر»:** طبق القيم الافتراضية أعلاه مباشرةً لكل حقل، واحرص على تضمين 2–4 عناصر في `emotional_triggers`, `segments`, `pains`, `marketing_frameworks`, `marketing_strategies`, `tones`, مع إدراج عنصرين على الأقل في بقية الحقول (`features`, `benefits`, `transformational_benefits`, `usps`, `message_map`, `proofs`). يمكن دمج القوائم المخصصة للمستخدم مع هذه القيم بشرط عدم إسقاط أي عنصر أساسي من القوائم الافتراضية.
 
+### منطق الدمج التلقائي عند Stage B
+
+```pseudo
+function prepare_secondary_fields(intake):
+    core_fields = {
+        "emotional_triggers", "segments", "pains",
+        "marketing_frameworks", "marketing_strategies", "tones"
+    }
+
+    secondary_fields = [
+        "emotional_triggers", "segments", "pains",
+        "marketing_frameworks", "marketing_strategies", "tones",
+        "features", "benefits", "transformational_benefits",
+        "usps", "message_map", "proofs"
+    ]
+
+    response = normalize_tokens(intake)
+    continue_flag = response.contains_word("استمر")
+
+    defaults = load_defaults_from_addendum()
+    merged = {}
+
+    for field in secondary_fields:
+        user_values = response.get_list(field)
+        base = []
+        if continue_flag:
+            base += defaults[field]
+        base += user_values
+        merged[field] = enforce_lengths(base,
+            min_items=2 if field in core_fields else 1,
+            max_items=4 if field in core_fields else None
+        )
+
+    return deduplicate_preserve_order(merged)
+```
+
+- `normalize_tokens` يجب أن يحول «استمر» أو «استمري» إلى كلمة أساسية واحدة.
+- `load_defaults_from_addendum` يُشير مباشرةً إلى الجداول أعلاه، لذلك أي تحديث هنا ينعكس آليًا على الروتين.
+- `enforce_lengths` يضمن 2–4 عناصر للحقل من مجموعة `core_fields`، وبحد أدنى عنصرين لبقية القوائم.
+- عند غياب كلمة «استمر» وغياب قوائم المستخدم، يجب إرسال مطالبة تذكيرية بضرورة تزويد القوائم أو كتابة «استمر».
+
+### جدول used_fields قبل بناء النسخ
+
+- بعد استدعاء `prepare_secondary_fields` وقبل توليد أي نسخ، أنشئ جدولًا أو قسم JSON باسم `used_fields` يطبع القيمة الدقيقة لكل حقل (مصدر المستخدم + الافتراضي).
+- يتم ترقيم الصفوف بحسب رقم التنويع (`v1`, `v2`, …) مع إبراز العناصر التي ستُستهلك في كل نسخة.
+- أثناء توليد النسخ، يُستخدم `used_fields[vN][field]` لاختيار العناصر داخل الهوك/الجسم/CTA بما يمنع التناقض بين الجدول والنص.
+- في حال تعديل القوائم لاحقًا، يُعاد إنشاء `used_fields` ثم تحديث النصوص لضمان التزام الاتساق.
+
 ### افتراضات متعددة تلقائية عند "استمر"
 - إن لم يقدّم المستخدم قيمًا، أنشئ **مصفوفات افتراضية** لكل حقل (2–4 عناصر على الأقل) لتوليد مزيج غني.
 - مثال سريع للأهداف والقنوات:
