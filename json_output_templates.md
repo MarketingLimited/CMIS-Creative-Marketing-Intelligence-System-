@@ -26,11 +26,24 @@
 {
   "channel": "Meta",
   "format": "video",
+  "media_type": "reel_9x16|static_4x5|carousel|story",
   "hook": "",
   "body_copy": "",
   "cta": "",
   "disclosure": "#إعلان",
   "offer": {"value": "", "currency": "BHD"},
+  "marketing_framework": "PAS|AIDA|FAB|4U|StoryBrand|PASTOR",
+  "marketing_strategy": ["UGC", "Offer-led"],
+  "awareness_stage": "unaware|problem|solution|product|most",
+  "funnel_stage": "TOFU|MOFU|BOFU",
+  "transformational_benefit": "",
+  "usp_reference": "",
+  "message_map": {
+    "hook": "",
+    "body": "",
+    "proof": "",
+    "cta": ""
+  },
   "design_trend": "Bold_Minimalism",
   "audio_trend": "Interactive_Audio",
   "design_description": {
@@ -140,7 +153,13 @@
     "audio_variant": "voice_gender/accent/music_sfx",
     "community_type": "ugc|egc|brand",
     "interactivity": "direct_cta|question|shop",
-    "media_type": "static_1x1|static_4x5|reel_9x16|carousel",
+    "media_type": "static_1x1|static_4x5|reel_9x16|carousel|story",
+    "marketing_strategy": "UGC|Offer-led|Educational|Social_proof",
+    "awareness_stage": "unaware|problem|solution|product|most",
+    "funnel_stage": "TOFU|MOFU|BOFU",
+    "transformational_benefit": "",
+    "usp_reference": "",
+    "message_map": "Hook>Body>Proof>CTA",
     "distinct_axes": ["framework", "tone", "visual_style"]
   },
   "compliance_report_schema_ref": "quality_and_variations.md § مخطط تقرير الامتثال (JSON)"
