@@ -1368,7 +1368,7 @@ def generate_video_scenario(input):
 ## **التكامل مع الوحدات السابقة**
 ```yaml
 integration:
-  from_09_content_planning:
+  from_module_09_content:
     - "استخدام content_type لتحديد scenario_type تلقائياً"
     - "استخدام weekly/monthly plan لتوزيع أنواع الفيديو"
   
@@ -1475,7 +1475,7 @@ integration:
 
 ---
 
-**انتهى قسم MODULE_08 (منقول عن 08_video_scenarios.md)**
+**انتهى قسم MODULE_08 (المحتوى مدمج ضمن 08_09_video_and_content.md)**
 ````
 
 <!-- CMIS:END::STEPS -->
@@ -2764,7 +2764,7 @@ def generate_video_scenario(input):
 ## **التكامل مع الوحدات السابقة**
 ```yaml
 integration:
-  from_09_content_planning:
+  from_module_09_content:
     - "استخدام content_type لتحديد scenario_type تلقائياً"
     - "استخدام weekly/monthly plan لتوزيع أنواع الفيديو"
   
@@ -2871,7 +2871,7 @@ integration:
 
 ---
 
-**انتهى قسم MODULE_08 (منقول عن 08_video_scenarios.md)**
+**انتهى قسم MODULE_08 (المحتوى مدمج ضمن 08_09_video_and_content.md)**
 ````
 
 <!-- CMIS:END::EXAMPLES -->
@@ -3430,7 +3430,7 @@ def generate_content_plan(input):
 * **التنويع:** لا تكرار نوع محتوى في يومين متتاليين، تناوب استراتيجي بين فيديو/صور/كاروسيل.
 * **الخطوة التالية:** تنفيذ كل منشور عبر الوحدات 01-08 (توليد النصوص، التصاميم، السيناريوهات).
 
-**انتهى قسم MODULE_09 (منقول عن 09_content_planning.md)**
+**انتهى قسم MODULE_09 (المحتوى مدمج ضمن 08_09_video_and_content.md)**
 
 <!-- CMIS:END::STEPS -->
 
@@ -3870,7 +3870,7 @@ def generate_content_plan(input):
 * **التنويع:** لا تكرار نوع محتوى في يومين متتاليين، تناوب استراتيجي بين فيديو/صور/كاروسيل.
 * **الخطوة التالية:** تنفيذ كل منشور عبر الوحدات 01-08 (توليد النصوص، التصاميم، السيناريوهات).
 
-**انتهى قسم MODULE_09 (منقول عن 09_content_planning.md)**
+**انتهى قسم MODULE_09 (المحتوى مدمج ضمن 08_09_video_and_content.md)**
 
 <!-- CMIS:END::EXAMPLES -->
 

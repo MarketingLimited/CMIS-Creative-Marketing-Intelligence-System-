@@ -334,7 +334,7 @@ validators:
 
 * **النتيجة/الإجراء:** فائز {{winner\_id}}؛ إعادة توليد جيل جديد مشتق \+ نشر على القنوات ذات الصلة.
 
-**انتهى قسم MODULE_05 (منقول عن 05_testing_optimization.md)**
+**انتهى قسم MODULE_05 (المحتوى مدمج ضمن 05_06_testing_and_compliance.md)**
 
 <!-- CMIS:END::STEPS -->
 
@@ -609,7 +609,7 @@ validators:
 
 * **النتيجة/الإجراء:** فائز {{winner\_id}}؛ إعادة توليد جيل جديد مشتق \+ نشر على القنوات ذات الصلة.
 
-**انتهى قسم MODULE_05 (منقول عن 05_testing_optimization.md)**
+**انتهى قسم MODULE_05 (المحتوى مدمج ضمن 05_06_testing_and_compliance.md)**
 
 <!-- CMIS:END::EXAMPLES -->
 
