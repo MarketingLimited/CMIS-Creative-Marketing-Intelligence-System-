@@ -74,6 +74,12 @@
 3. تطبيق القواعد الجوهرية (#إعلان، BHD، RTL، CTA واحد، منع المطلقات…).
 4. إنتاج المخرجات وفق القالب أدناه.
 
+<!-- CMIS:START::MIXER_STEP -->
+- بعد تلخيص المدخلات، ابنِ **مصفوفات** من الحقول (تدعم تعدد القيم لكل حقل + افتراضات عند الحاجة)،  
+  وولّد **6–12 نموذجًا** عبر المزج الذكي (تنويع trigger, framework, strategy, tone, awareness/funnel).  
+  لكل نموذج: اطبع `used_fields` و`design_description` و`compliance`.
+<!-- CMIS:END::MIXER_STEP -->
+
 ### المحتوى الأصلي الكامل (منسوخ حرفيًا)
 ## **سياسة الامتثال والسلامة (عامة لجميع المولدات)**
 ````````````yaml
@@ -2883,6 +2889,31 @@ integration:
 ```
 
 <!-- CMIS:END::OUTPUT -->
+
+<!-- CMIS:START::OUTPUT_SCHEMA_HINT -->
+{
+  "variations": [
+    {
+      "id": "v1",
+      "channel": "Instagram",
+      "framework": "AIDA",
+      "copy": { "hook": "", "short": "", "long": "", "cta": "", "proof": [] },
+      "design_description": {
+        "composition": "", "background": "", "lighting": "",
+        "colors": "", "highlight": "", "de_emphasize": "",
+        "element_positions": "", "ratio": "9:16", "motion": ""
+      },
+      "used_fields": {
+        "marketing_objective": "", "emotional_triggers": [], "channels": [],
+        "segments": [], "pains": [], "marketing_frameworks": [], "marketing_strategies": [],
+        "tones": [], "features": [], "benefits": [], "transformational_benefits": [],
+        "usps": [], "message_map": [], "proofs": []
+      },
+      "compliance": "✅"
+    }
+  ]
+}
+<!-- CMIS:END::OUTPUT_SCHEMA_HINT -->
 
 <!-- CMIS:START::STATUS -->
 
