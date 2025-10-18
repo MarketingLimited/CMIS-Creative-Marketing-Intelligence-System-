@@ -162,7 +162,7 @@
     "message_map": "Hook>Body>Proof>CTA",
     "distinct_axes": ["framework", "tone", "visual_style"]
   },
-  "compliance_report_schema_ref": "quality_and_variations.md § مخطط تقرير الامتثال (JSON)"
+  "compliance_report_schema_ref": "support_and_templates.md §QUALITY_AND_VARIATIONS — مخطط تقرير الامتثال (JSON)"
 }
 ```
 
@@ -1356,7 +1356,7 @@ glossary:
 
 <!-- CMIS:START::REFS_QUALITY -->
 ### مراجع الجودة والامتثال
-- راجع `quality_and_variations.md` قبل الإخراج النهائي.
-- طبّق قواعد `quality_and_variations.md` عند توليد تنويعات.
+- راجع `support_and_templates.md §QUALITY_AND_VARIATIONS` قبل الإخراج النهائي.
+- طبّق قواعد `support_and_templates.md §QUALITY_AND_VARIATIONS` عند توليد تنويعات.
 <!-- CMIS:END::REFS_QUALITY -->
 <!-- CMIS:END::MODULE_07_OUTPUT -->

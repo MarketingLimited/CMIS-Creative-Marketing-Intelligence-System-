@@ -2,7 +2,7 @@
 # instruction_addendum_and_playbooks.md — توجيهات تفصيلية مكملة
 هذا الملف مكمل إلزامي يحفظ كل التفاصيل دون حذف أي سطر من الإصدارة السابقة.
 > يستخدم هذا الملحق لتجميع التفاصيل التي أُزيلت من البرومبت المختصر. يُرجى الرجوع إلى ملفات الوحدات المتخصصة عند التنفيذ.
-> تفاصيل المكتبات والقوالب والوثائق الموحّدة: libraries_and_examples.md، json_output_templates.md، media_templates.md، quality_and_variations.md، user_and_training_guides.md، operations_and_support.md، instruction_addendum_and_playbooks.md.
+> تفاصيل المكتبات والقوالب والوثائق الموحّدة: libraries_and_examples.md، json_output_templates.md، support_and_templates.md §MEDIA_TEMPLATES، support_and_templates.md §QUALITY_AND_VARIATIONS، support_and_templates.md §USER_AND_TRAINING_GUIDES، support_and_templates.md §OPERATIONS_AND_SUPPORT، instruction_addendum_and_playbooks.md.
 
 <!-- CMIS:START::INTAKE_CHOICES_AND_DEFAULTS -->
 ## 📚 خيارات جاهزة + افتراضات متعددة (Stage B)
@@ -134,10 +134,10 @@ function prepare_secondary_fields(intake):
 - instruction_addendum_and_playbooks.md
 - libraries_and_examples.md
 - json_output_templates.md
-- media_templates.md
-- quality_and_variations.md
-- user_and_training_guides.md
-- operations_and_support.md
+- support_and_templates.md §MEDIA_TEMPLATES
+- support_and_templates.md §QUALITY_AND_VARIATIONS
+- support_and_templates.md §USER_AND_TRAINING_GUIDES
+- support_and_templates.md §OPERATIONS_AND_SUPPORT
 - 01_market_intel.md
 - 02_persuasion.md
 - 03_frameworks.md
@@ -152,10 +152,10 @@ function prepare_secondary_fields(intake):
 
 <!-- CMIS:START::UNIFIED_FILES -->
 ## 📦 Unified Files & Lists
-- media_templates.md — نماذج المشاهد والوسائط المتعددة.
-- quality_and_variations.md — قوائم فحص الجودة واستراتيجيات التنويع.
-- user_and_training_guides.md — أدلة التشغيل، التدريب، سيناريوهات الدعم.
-- operations_and_support.md — إجراءات التشغيل، SLA، إدارة الحوادث.
+- support_and_templates.md §MEDIA_TEMPLATES — نماذج المشاهد والوسائط المتعددة.
+- support_and_templates.md §QUALITY_AND_VARIATIONS — قوائم فحص الجودة واستراتيجيات التنويع.
+- support_and_templates.md §USER_AND_TRAINING_GUIDES — أدلة التشغيل، التدريب، سيناريوهات الدعم.
+- support_and_templates.md §OPERATIONS_AND_SUPPORT — إجراءات التشغيل، SLA، إدارة الحوادث.
 - instruction_addendum_and_playbooks.md — هذا الملف يحوي جميع التفصيلات المكمّلة.
 - تفاصيل القوائم الموحدة (تصميم، صوت، ضبط سير العمل) موزعة عبر الأقسام الفرعية لكل ملف.
 <!-- CMIS:END::UNIFIED_FILES -->
