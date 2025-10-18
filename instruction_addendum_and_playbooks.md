@@ -4663,26 +4663,65 @@ glossary:
 
 ## 1) المفهوم/الفكرة الأساسية (The Core Concept/Idea)
 - **الوصف:** فكرة التصميم والشعور المستهدف (استراتيجي/عاطفي).
-- **المزاج العام (Mood):** أمثلة: دافئ، احترافي، مرح، غامض، فاخر، بسيط.
-- **النمط (Style):** أمثلة: عصري (Modern)، كلاسيكي (Classic)، بسيط (Minimalist)، مستقبلي (Futuristic)، ريفي (Rustic).
-- **الرسالة البصرية (Visual Message):** ما الذي نريد أن نقوله دون كلام؟ أمثلة: “منتجنا سهل الاستخدام”، “نحن علامة صديقة للبيئة”.
-- **الإحساس العام (Look & Feel):** وصف شامل للتجربة (نظيف ومنظّم مع لمسة ألوان زاهية…).
+- **المزاج العام (Mood):** دافئ، احترافي، مرح، غامض، فاخر، بسيط.
+- **النمط (Style):** Modern، Classic، Minimalist، Futuristic، Rustic.
+- **الرسالة البصرية (Visual Message):** الرسالة الضمنية المراد إيصالها بصريًا (مثال: “سهل الاستخدام”، “صديق للبيئة”).
+- **الإحساس العام (Look & Feel):** وصف التجربة البصرية (نظيف، منظّم، لمسة ألوان زاهية…).
 
 ## 2) العناصر البصرية (Visual Elements)
-- **لوحة الألوان (Color Palette):** حدِّد ألوانًا أساسية وثانوية مع قيم HEX (مثال: #87CEEB، #FFFFFF، #F5F5F5، أو هوية العلامة).
-- **الخطوط (Typography):** عناوين/نصوص (مثال: Cairo Bold للعناوين، Poppins Regular للنص).
-- **الصور والرسومات (Imagery & Graphics):** صور فوتوغرافية حقيقية وعالية الجودة للمنتج/الفريق/الفعّاليات + رسومات خطية بسيطة؛ تجنّب Stock النمطية.
+- **لوحة الألوان (Color Palette):** ألوان أساسية/ثانوية مع قيم HEX (مثال: #0A2540، #FFC300، #F5F5F5، #FFFFFF).
+- **الخطوط (Typography):** عناوين: Cairo/IBM Plex Arabic (Bold)، نصوص: Noto Naskh/Poppins (Regular).
+- **الصور والرسومات (Imagery & Graphics):** صور فوتوغرافية حقيقية وعالية الجودة + رسومات خطية بسيطة؛ تجنّب Stock النمطية.
 - **الأيقونات والرموز (Icons & Symbols):** أيقونات بسيطة بخطوط رفيعة متسقة مع الأسلوب.
-- **التكوين والتخطيط (Composition & Layout):** تخطيط شبكي، مساحات بيضاء كافية، وضع الشعار دائمًا في الزاوية العلوية اليمنى.
-- **عناصر العلامة (Branding Elements):** مواضع الشعار، الأنماط الرسومية الخاصة، وأي أصول بصرية معتمدة.
+- **التكوين والتخطيط (Composition & Layout):** تخطيط شبكي، مساحات بيضاء كافية، الشعار دائمًا أعلى اليمين.
+- **عناصر العلامة (Branding Elements):** مواضع الشعار والأنماط الرسومية الخاصة بالعلامة.
 
 ## للفيديو (For Video)
-- **سرعة المونتاج (Pacing):** سريع/حيوي أم بطيء/سينمائي؟
-- **الانتقالات (Transitions):** انتقالات بسيطة (cuts) أم حركية (motion graphics)؟
-- **تدرّج الألوان (Color Grading):** ألوان مشبعة ودافئة أم باردة وباهتة؟
+- **سرعة المونتاج (Pacing):** سريع/حيوي أم بطيء/سينمائي.
+- **الانتقالات (Transitions):** Cuts بسيطة أم Motion Graphics.
+- **تدرّج الألوان (Color Grading):** ألوان دافئة/مشبّعة أم باردة/باهتة.
 
-> **إلزام:** عند توليد أي أصل، اكتب فقرة “Art Direction — وصف شامل” تغطي جميع البنود أعلاه، بصياغة وصفية متماسكة (لا جداول للنصوص الطويلة).
+> **إلزام:** كل أصل يجب أن يتضمن فقرة «Art Direction — وصف شامل» تغطي جميع البنود أعلاه بصياغة وصفية متماسكة (دون جداول).
 <!-- CMIS:END::ART_DIRECTION_GUIDE_2025_10 -->
+<!-- CMIS:START::CONTENT_FORMATS_TAXONOMY_2025_10 -->
+# CONTENT FORMATS — التصنيف الموحّد
+
+## أشكال المحتوى المرئي (Visual Content Formats)
+- صورة (Image): تصميم جرافيك، انفوجرافيك، صورة فوتوغرافية، كاروسيل، ميمز.
+
+## أشكال المحتوى الحركي (Video Content Formats)
+- فيديو قصير (Short-form): Instagram Reel، TikTok، YouTube Shorts.
+- فيديو طويل (Long-form): تعليمي/تثقيفي، تمثيلي/قصصي، مؤثر، شهادات العملاء، بث مباشر، ويبينار.
+
+## أشكال المحتوى المكتوب (Written Content Formats)
+- مدونة/مقال، دراسة حالة، كتاب إلكتروني، منشورات نصية.
+
+## أشكال المحتوى الصوتي (Audio Content Formats)
+- بودكاست، مساحات تويتر/غرف صوتية.
+<!-- CMIS:END::CONTENT_FORMATS_TAXONOMY_2025_10 -->
+<!-- CMIS:START::PRE_OUTPUT_GUARD_HARD_2025_10 -->
+# PRE-OUTPUT GUARD — منطق إلزامي قبل أي إخراج
+
+pseudo (مُلزم ذهنيًا/إجرائيًا):
+function render_output(state):
+  required_labels = [
+    "Creative Brief","marketing_objective","emotional_trigger","Hooks","channels",
+    "segments","pains","Marketing frameworks","marketing_strategies","awareness_stage",
+    "funnel_stage","Tones","features","benefits","transformational_benefits","usps",
+    "message_map","proofs","brand guardrails","seasonality","style","offer/pricing",
+    "CTA","Content Formats","Art Direction"
+  ]
+
+  used = collect_used_inputs(state)                   // مدخلات المستخدم + افتراضات موثقة
+  used = fill_missing_with_tags(used, "[افتراض]")    // مع سبب مختصر لكل حقل ناقص
+  used["Hooks"] = generate_hooks(3..5, 80, used)     // ≤80 حرفًا لكل Hook
+
+  art = build_art_direction_paragraph(used)          // وفق §ART_DIRECTION_GUIDE_2025_10
+
+  for label in required_labels:
+    assert has_value
+
+<!-- CMIS:END::PRE_OUTPUT_GUARD_HARD_2025_10 -->
 <!-- CMIS:START::CONTENT_FORMATS_TAXONOMY_2025_10 -->
 # CONTENT FORMATS — التصنيف الموحّد
 
