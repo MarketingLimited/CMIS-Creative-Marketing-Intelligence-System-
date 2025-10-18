@@ -32,7 +32,35 @@
   "disclosure": "#إعلان",
   "offer": {"value": "", "currency": "BHD"},
   "design_trend": "Bold_Minimalism",
-  "audio_trend": "Interactive_Audio"
+  "audio_trend": "Interactive_Audio",
+  "design_description": {
+    "composition": "",
+    "background": "",
+    "lighting": "",
+    "colors": [],
+    "focus": "",
+    "de_emphasize": "",
+    "element_positions": {
+      "logo": "",
+      "headline": "",
+      "supporting_copy": "",
+      "cta": "",
+      "price": "",
+      "text_overlay": ""
+    },
+    "ratio": "1:1|4:5|9:16",
+    "motion": "static|subtle|dynamic"
+  },
+  "compliance": {
+    "status": "✅|⚠️|🚫",
+    "disclosure_hashtag": true,
+    "rtl_layout": true,
+    "single_cta": true,
+    "currency_format": "BHD",
+    "text_overlay_words": 0,
+    "claims_clean": true,
+    "notes": ""
+  }
 }
 ```
 
@@ -184,7 +212,34 @@
       "awareness_stage": "unaware|problem|solution|product|most",
       "tone": "",
       "copy": { "short": "", "long": "", "hook": "", "cta": "", "proof": [] },
-      "compliance": "✅|⚠️|🚫"
+      "design_description": {
+        "composition": "",
+        "background": "",
+        "lighting": "",
+        "colors": [],
+        "focus": "",
+        "de_emphasize": "",
+        "element_positions": {
+          "logo": "",
+          "headline": "",
+          "supporting_copy": "",
+          "cta": "",
+          "price": "",
+          "text_overlay": ""
+        },
+        "ratio": "1:1|4:5|9:16",
+        "motion": "static|subtle|dynamic"
+      },
+      "compliance": {
+        "status": "✅|⚠️|🚫",
+        "disclosure_hashtag": true,
+        "rtl_layout": true,
+        "single_cta": true,
+        "currency_format": "BHD",
+        "text_overlay_words": 0,
+        "claims_clean": true,
+        "notes": ""
+      }
     }
   ],
   "dco": { "candidates": [], "experiment": {}, "report": {} },
@@ -229,9 +284,36 @@ strategy_summary:
     "cta": "",
     "proof": []
   },
+  "design_description": {
+    "composition": "",
+    "background": "",
+    "lighting": "",
+    "colors": [],
+    "focus": "",
+    "de_emphasize": "",
+    "element_positions": {
+      "logo": "",
+      "headline": "",
+      "supporting_copy": "",
+      "cta": "",
+      "price": "",
+      "text_overlay": ""
+    },
+    "ratio": "1:1|4:5|9:16",
+    "motion": "static|subtle|dynamic"
+  },
   "primary_metric": "CTR|CVR|ROAS|HookRate",
   "naming": "Ad_v{n}_{Channel}_{Len}_{HookID}",
-  "compliance": "✅|⚠️|🚫",
+  "compliance": {
+    "status": "✅|⚠️|🚫",
+    "disclosure_hashtag": true,
+    "rtl_layout": true,
+    "single_cta": true,
+    "currency_format": "BHD",
+    "text_overlay_words": 0,
+    "claims_clean": true,
+    "notes": "سبب العلامة أو أي استثناء"
+  },
   "notes": "لماذا هذا الإطار/هذه النبرة لهذه المرحلة"
 }
 ```
@@ -240,8 +322,8 @@ strategy_summary:
 
 - حد أقصى ثلاث تنويعات لكل قناة (v1/v2/v3 Hybrid عند الحاجة).
 - إن وُجدت شرائح متعددة، أخرج نسخة واضحة لكل Segment مع تسمية.
-- أرفق وصف التصميم: الفكرة البصرية، النسبة، الألوان، الخطوط، ملاحظات RTL.
-- احرص على أن تشمل كل حزمة قناة تقرير الامتثال (✅/⚠️/🚫) ونسخة `sanitized_copy` عند التصحيح.
+- أرفق وصف التصميم التفصيلي (`design_description`) الذي يشمل: `composition`, `background`, `lighting`, `colors`, `focus`, `de_emphasize`, `element_positions`, `ratio`, `motion`.
+- احرص على أن تشمل كل حزمة قناة تقرير امتثال تفصيلي (`compliance`) يغطي الوسم، RTL، CTA واحد، تنسيق العملة، وعدد كلمات النص البصري (≤8 كلمات)، وأي ملاحظات تصحيحية، إضافة إلى نسخة `sanitized_copy` عند التصحيح.
 - فعّل متطلبات DCO والاختبارات من `05_testing_optimization.md`: مرشحون K≤3 لكل قناة، فرضية A/B لمدة 3 أيام، مقياس أساسي مع تقرير متابعة.
 - التزم بتسمية التصدير `Ad_v{n}_{Channel}_{Len}_{HookID}` لتجميع الحزم وإرسالها.
 
@@ -271,14 +353,34 @@ strategy_summary:
     "usp": "…"
   },
   "primary_metric": "CTR|CVR|ROAS|HookRate",
-  "design_notes": {
-    "visual_idea": "",
-    "ratio": "",
-    "overlay": "",
-    "palette": [],
-    "fonts": []
+  "design_description": {
+    "composition": "",
+    "background": "",
+    "lighting": "",
+    "colors": [],
+    "focus": "",
+    "de_emphasize": "",
+    "element_positions": {
+      "logo": "",
+      "headline": "",
+      "supporting_copy": "",
+      "cta": "",
+      "price": "",
+      "text_overlay": ""
+    },
+    "ratio": "1:1|4:5|9:16",
+    "motion": "static|subtle|dynamic"
   },
-  "compliance": "✅|⚠️|🚫",
+  "compliance": {
+    "status": "✅|⚠️|🚫",
+    "disclosure_hashtag": true,
+    "rtl_layout": true,
+    "single_cta": true,
+    "currency_format": "BHD",
+    "text_overlay_words": 0,
+    "claims_clean": true,
+    "notes": ""
+  },
   "naming": "Ad_v{n}_{Channel}_{Len}_{HookID}"
 }
 ```
@@ -336,9 +438,36 @@ improvement_recommendations:
           "cta": "ابدأ التجربة المجانية الآن — بدون بطاقة.",
           "proof": ["[محاكاة] تقييم 4.7/5 خلال 90 يومًا"]
         },
+        "design_description": {
+          "composition": "واجهة منصة CMIS تظهر على لابتوب بيد شخص يعمل من مقهى.",
+          "background": "بيئة مقهى مضاءة طبيعيًا مع ضبابية خفيفة.",
+          "lighting": "إضاءة دافئة من اليمين تبرز الشاشة.",
+          "colors": ["#0B1B3A", "#F5C542", "#FFFFFF"],
+          "focus": "شاشة اللابتوب وCTA أسفلها.",
+          "de_emphasize": "الرواد في الخلفية بخلفية ضبابية.",
+          "element_positions": {
+            "logo": "أعلى اليمين مع ظل بسيط.",
+            "headline": "منتصف يسار فوق الشاشة.",
+            "supporting_copy": "أسفل العنوان بخط أوضح.",
+            "cta": "زر ذهبي أسفل الشاشة مباشرةً.",
+            "price": "شريط سفلي صغير يعرض 14.9 BHD.",
+            "text_overlay": "اختبر 3 زوايا خلال 10 دقائق"
+          },
+          "ratio": "4:5",
+          "motion": "static"
+        },
         "primary_metric": "CTR",
         "naming": "Ad_v2_Meta_Short_HookA",
-        "compliance": "✅",
+        "compliance": {
+          "status": "✅",
+          "disclosure_hashtag": true,
+          "rtl_layout": true,
+          "single_cta": true,
+          "currency_format": "BHD",
+          "text_overlay_words": 5,
+          "claims_clean": true,
+          "notes": ""
+        },
         "notes": "PAS لمرحلة Problem على Meta لرفع الانتباه بسرعة."
       }
     ],
@@ -351,6 +480,103 @@ improvement_recommendations:
     "improvement_recommendations": { "repeat": [], "refine": [], "remove": [] }
   }
 }
+```
+
+### مجموعة تنويعات اختبار (Stage B Format Check)
+
+- الهدف: التحقق من ملء جميع الحقول الجديدة (`design_description`, `compliance`) مع ضبط نص الشاشة ≤ 8 كلمات.
+
+```json
+[
+  {
+    "variant_id": "v1",
+    "channel": "Meta",
+    "framework": "AIDA",
+    "awareness_stage": "problem",
+    "tone": "واثقة",
+    "copy": {
+      "hook": "#إعلان ميزانيتك الإعلانية تحتاج اختبارًا أسرع.",
+      "short": "جرّب CMIS لاختيار 3 زوايا عربية خلال 10 دقائق مع تتبع تلقائي.",
+      "long": "#إعلان وفّر الوقت وقلّل الهدر باختبارات CMIS: لوحات RTL، أسعار BHD، ونصوص جاهزة للحملات في يوم واحد.",
+      "cta": "ابدأ التجربة المجانية الآن.",
+      "proof": ["[افتراض] 500+ حملة خليجية"]
+    },
+    "design_description": {
+      "composition": "لقطة عمودية لمسوّق يستخدم لابتوب مع واجهة CMIS واضحة.",
+      "background": "مكتب حديث بألوان محايدة مع نبات أخضر باهت.",
+      "lighting": "إضاءة طبيعية من نافذة جانبية تبرز الوجه والشاشة.",
+      "colors": ["#0B1B3A", "#F7F4EC", "#F5C542"],
+      "focus": "الواجهة على الشاشة وزر CTA.",
+      "de_emphasize": "الكماليات المكتبية على اليسار بخلفية ضبابية.",
+      "element_positions": {
+        "logo": "أعلى اليمين داخل شارة بيضاء.",
+        "headline": "منتصف علوي بخط سميك.",
+        "supporting_copy": "أسفل العنوان بمحاذاة RTL.",
+        "cta": "زر ذهبي أسفل منتصف الشاشة.",
+        "price": "يسار الزر بخط أصغر يوضح 14.9 BHD.",
+        "text_overlay": "اختبر أسرع خلال دقيقة"
+      },
+      "ratio": "4:5",
+      "motion": "static"
+    },
+    "primary_metric": "CTR",
+    "compliance": {
+      "status": "✅",
+      "disclosure_hashtag": true,
+      "rtl_layout": true,
+      "single_cta": true,
+      "currency_format": "BHD",
+      "text_overlay_words": 4,
+      "claims_clean": true,
+      "notes": ""
+    },
+    "notes": "تنويع رئيسي لبداية الحملة." 
+  },
+  {
+    "variant_id": "v2",
+    "channel": "TikTok",
+    "framework": "StoryBrand",
+    "awareness_stage": "solution",
+    "tone": "مشوقة",
+    "copy": {
+      "hook": "#إعلان هل تتكرر أفكارك على TikTok؟",
+      "short": "حوّل الأفكار إلى سيناريوهات فيديو بخطوات عربية سهلة ومؤشرات Hook جاهزة.",
+      "long": "#إعلان CMIS يبني لك لوحة محتوى TikTok: سيناريوهات RTL، CTA واحد، وتحليل أداء تلقائي خلال 48 ساعة.",
+      "cta": "صمّم سيناريو TikTok الآن.",
+      "proof": ["[افتراض] رفع معدل المشاهدة 28%"]
+    },
+    "design_description": {
+      "composition": "لقطات متتابعة لمصممة محتوى تمسك الهاتف وتستعرض القصص المصغّرة.",
+      "background": "استوديو منزلي بإضاءة RGB خافتة وخلفية بنفسجية.",
+      "lighting": "إضاءة حلقية أمامية مع شرائط LED خلفية متحركة.",
+      "colors": ["#1B1B3F", "#7A5CFF", "#F9F871"],
+      "focus": "الهاتف والشاشة التي تعرض واجهة سيناريو.",
+      "de_emphasize": "الأثاث الجانبي مع عزل عمق.",
+      "element_positions": {
+        "logo": "أعلى اليسار بنسخة شفافة.",
+        "headline": "وسط أعلى بخط عريض.",
+        "supporting_copy": "سطر واحد تحت العنوان.",
+        "cta": "زر نابض في الأسفل يمين.",
+        "price": "تمرير نصي سفلي يظهر العرض.",
+        "text_overlay": "وفر 30% هذا الأسبوع"
+      },
+      "ratio": "9:16",
+      "motion": "dynamic"
+    },
+    "primary_metric": "HookRate",
+    "compliance": {
+      "status": "✅",
+      "disclosure_hashtag": true,
+      "rtl_layout": true,
+      "single_cta": true,
+      "currency_format": "BHD",
+      "text_overlay_words": 4,
+      "claims_clean": true,
+      "notes": ""
+    },
+    "notes": "تنويع فيديو قصير مع حركة مستمرة." 
+  }
+]
 ```
 
 ---
@@ -379,9 +605,36 @@ improvement_recommendations:
         "cta": "تعرّف على الأسعار بالـBHD",
         "proof": ["[افتراض] تقييم 4.7/5 (90 يومًا)"]
       },
+      "design_description": {
+        "composition": "واجهات لوحية متداخلة تعرض عناوين بحث متعددة.",
+        "background": "خلفية فاتحة بنمط نقطي خفيف.",
+        "lighting": "إضاءة استديو متوازنة بلا ظلال قاسية.",
+        "colors": ["#FFFFFF", "#1B2735", "#0094FF"],
+        "focus": "مربعات العناوين الرئيسية في المنتصف.",
+        "de_emphasize": "الهوامش الفارغة والديكور الخلفي.",
+        "element_positions": {
+          "logo": "أعلى اليسار داخل شريط شفاف.",
+          "headline": "منتصف أعلى مع محاذاة RTL.",
+          "supporting_copy": "أسفل العنوان مباشرةً في عمود واحد.",
+          "cta": "زر أزرق في الأسفل بامتداد العرض.",
+          "price": "يمين الزر بخط أصغر.",
+          "text_overlay": "ضاعف نقراتك الذكية"
+        },
+        "ratio": "1:1",
+        "motion": "static"
+      },
       "primary_metric": "CTR",
       "naming": "Ad_v1_Google_RSA_IntentX",
-      "compliance": "⚠️",
+      "compliance": {
+        "status": "⚠️",
+        "disclosure_hashtag": true,
+        "rtl_layout": true,
+        "single_cta": true,
+        "currency_format": "BHD",
+        "text_overlay_words": 3,
+        "claims_clean": false,
+        "notes": "يجب إرفاق مصدر للتقييم"
+      },
       "notes": "4U+FAB يوضّح الفائدة ويعالج الاعتراضات بسرعة."
     }
   ],
@@ -567,7 +820,34 @@ glossary:
       "awareness_stage": "unaware|problem|solution|product|most",
       "tone": "",
       "copy": { "short": "", "long": "", "hook": "", "cta": "", "proof": [] },
-      "compliance": "✅|⚠️|🚫"
+      "design_description": {
+        "composition": "",
+        "background": "",
+        "lighting": "",
+        "colors": [],
+        "focus": "",
+        "de_emphasize": "",
+        "element_positions": {
+          "logo": "",
+          "headline": "",
+          "supporting_copy": "",
+          "cta": "",
+          "price": "",
+          "text_overlay": ""
+        },
+        "ratio": "1:1|4:5|9:16",
+        "motion": "static|subtle|dynamic"
+      },
+      "compliance": {
+        "status": "✅|⚠️|🚫",
+        "disclosure_hashtag": true,
+        "rtl_layout": true,
+        "single_cta": true,
+        "currency_format": "BHD",
+        "text_overlay_words": 0,
+        "claims_clean": true,
+        "notes": ""
+      }
     }
   ],
   "dco": { "candidates": [], "experiment": {}, "report": {} },
@@ -612,9 +892,36 @@ strategy_summary:
     "cta": "",
     "proof": []
   },
+  "design_description": {
+    "composition": "",
+    "background": "",
+    "lighting": "",
+    "colors": [],
+    "focus": "",
+    "de_emphasize": "",
+    "element_positions": {
+      "logo": "",
+      "headline": "",
+      "supporting_copy": "",
+      "cta": "",
+      "price": "",
+      "text_overlay": ""
+    },
+    "ratio": "1:1|4:5|9:16",
+    "motion": "static|subtle|dynamic"
+  },
   "primary_metric": "CTR|CVR|ROAS|HookRate",
   "naming": "Ad_v{n}_{Channel}_{Len}_{HookID}",
-  "compliance": "✅|⚠️|🚫",
+  "compliance": {
+    "status": "✅|⚠️|🚫",
+    "disclosure_hashtag": true,
+    "rtl_layout": true,
+    "single_cta": true,
+    "currency_format": "BHD",
+    "text_overlay_words": 0,
+    "claims_clean": true,
+    "notes": "سبب العلامة أو أي استثناء"
+  },
   "notes": "لماذا هذا الإطار/هذه النبرة لهذه المرحلة"
 }
 ```
@@ -623,8 +930,8 @@ strategy_summary:
 
 - حد أقصى ثلاث تنويعات لكل قناة (v1/v2/v3 Hybrid عند الحاجة).
 - إن وُجدت شرائح متعددة، أخرج نسخة واضحة لكل Segment مع تسمية.
-- أرفق وصف التصميم: الفكرة البصرية، النسبة، الألوان، الخطوط، ملاحظات RTL.
-- احرص على أن تشمل كل حزمة قناة تقرير الامتثال (✅/⚠️/🚫) ونسخة `sanitized_copy` عند التصحيح.
+- أرفق وصف التصميم التفصيلي (`design_description`) الذي يشمل: `composition`, `background`, `lighting`, `colors`, `focus`, `de_emphasize`, `element_positions`, `ratio`, `motion`.
+- احرص على أن تشمل كل حزمة قناة تقرير امتثال تفصيلي (`compliance`) يغطي الوسم، RTL، CTA واحد، تنسيق العملة، وعدد كلمات النص البصري (≤8 كلمات)، وأي ملاحظات تصحيحية، إضافة إلى نسخة `sanitized_copy` عند التصحيح.
 - فعّل متطلبات DCO والاختبارات من `05_testing_optimization.md`: مرشحون K≤3 لكل قناة، فرضية A/B لمدة 3 أيام، مقياس أساسي مع تقرير متابعة.
 - التزم بتسمية التصدير `Ad_v{n}_{Channel}_{Len}_{HookID}` لتجميع الحزم وإرسالها.
 
@@ -654,14 +961,34 @@ strategy_summary:
     "usp": "…"
   },
   "primary_metric": "CTR|CVR|ROAS|HookRate",
-  "design_notes": {
-    "visual_idea": "",
-    "ratio": "",
-    "overlay": "",
-    "palette": [],
-    "fonts": []
+  "design_description": {
+    "composition": "",
+    "background": "",
+    "lighting": "",
+    "colors": [],
+    "focus": "",
+    "de_emphasize": "",
+    "element_positions": {
+      "logo": "",
+      "headline": "",
+      "supporting_copy": "",
+      "cta": "",
+      "price": "",
+      "text_overlay": ""
+    },
+    "ratio": "1:1|4:5|9:16",
+    "motion": "static|subtle|dynamic"
   },
-  "compliance": "✅|⚠️|🚫",
+  "compliance": {
+    "status": "✅|⚠️|🚫",
+    "disclosure_hashtag": true,
+    "rtl_layout": true,
+    "single_cta": true,
+    "currency_format": "BHD",
+    "text_overlay_words": 0,
+    "claims_clean": true,
+    "notes": ""
+  },
   "naming": "Ad_v{n}_{Channel}_{Len}_{HookID}"
 }
 ```
@@ -719,9 +1046,36 @@ improvement_recommendations:
           "cta": "ابدأ التجربة المجانية الآن — بدون بطاقة.",
           "proof": ["[محاكاة] تقييم 4.7/5 خلال 90 يومًا"]
         },
+        "design_description": {
+          "composition": "واجهة منصة CMIS على لابتوب مع يد تشير إلى لوحة النتائج.",
+          "background": "مكتب مضاء بضوء النهار مع نافذة ضبابية الخلفية.",
+          "lighting": "إضاءة جانبية دافئة تعزز التفاصيل.",
+          "colors": ["#0B1B3A", "#F5C542", "#FFFFFF"],
+          "focus": "الشاشة التي تعرض مقاييس النجاح.",
+          "de_emphasize": "الأشياء الثانوية على الطاولة مثل الدفتر والقهوة.",
+          "element_positions": {
+            "logo": "أعلى اليمين بخلفية شفافة.",
+            "headline": "منتصف علوي بخط سميك.",
+            "supporting_copy": "تذييل أسفل العنوان مباشرةً.",
+            "cta": "زر بارز وسط أسفل.",
+            "price": "يسار الزر مع توضيح 14.9 BHD.",
+            "text_overlay": "اختبر 3 زوايا خلال 10 دقائق"
+          },
+          "ratio": "4:5",
+          "motion": "static"
+        },
         "primary_metric": "CTR",
         "naming": "Ad_v2_Meta_Short_HookA",
-        "compliance": "✅",
+        "compliance": {
+          "status": "✅",
+          "disclosure_hashtag": true,
+          "rtl_layout": true,
+          "single_cta": true,
+          "currency_format": "BHD",
+          "text_overlay_words": 5,
+          "claims_clean": true,
+          "notes": ""
+        },
         "notes": "PAS لمرحلة Problem على Meta لرفع الانتباه بسرعة."
       }
     ],
@@ -762,9 +1116,36 @@ improvement_recommendations:
         "cta": "تعرّف على الأسعار بالـBHD",
         "proof": ["[افتراض] تقييم 4.7/5 (90 يومًا)"]
       },
+      "design_description": {
+        "composition": "بطاقات نصية متحركة تستعرض خيارات العناوين.",
+        "background": "خلفية فاتحة بخطوط قطرية باهتة.",
+        "lighting": "إضاءة متساوية بلا تباين حاد.",
+        "colors": ["#FFFFFF", "#1B2735", "#00AEEF"],
+        "focus": "مربع العنوان الرئيسي.",
+        "de_emphasize": "الحواف والمساحات البيضاء.",
+        "element_positions": {
+          "logo": "أعلى اليمين في شريط شفاف.",
+          "headline": "مركز أعلى متماسك RTL.",
+          "supporting_copy": "تذييل وسط يسار.",
+          "cta": "زر أزرق بأسفل يمين.",
+          "price": "أسفل الزر بخط صغير.",
+          "text_overlay": "ضاعف نقراتك الذكية"
+        },
+        "ratio": "1:1",
+        "motion": "static"
+      },
       "primary_metric": "CTR",
       "naming": "Ad_v1_Google_RSA_IntentX",
-      "compliance": "⚠️",
+      "compliance": {
+        "status": "⚠️",
+        "disclosure_hashtag": true,
+        "rtl_layout": true,
+        "single_cta": true,
+        "currency_format": "BHD",
+        "text_overlay_words": 3,
+        "claims_clean": false,
+        "notes": "يجب إرفاق مصدر للتقييم"
+      },
       "notes": "4U+FAB يوضّح الفائدة ويعالج الاعتراضات بسرعة."
     }
   ],
