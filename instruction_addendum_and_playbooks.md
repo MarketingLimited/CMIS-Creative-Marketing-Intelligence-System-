@@ -4707,16 +4707,16 @@ glossary:
 pseudo (مُلزم ذهنيًا/إجرائيًا):
 function render_output(state):
   required_labels = [
-    "Creative Brief","marketing_objective","emotional_trigger","Hooks","channels",
-    "segments","pains","Marketing frameworks","marketing_strategies","awareness_stage",
-    "funnel_stage","Tones","features","benefits","transformational_benefits","usps",
-    "message_map","proofs","brand guardrails","seasonality","style","offer/pricing",
-    "CTA","Content Formats","Art Direction"
+    "creative_brief","marketing_objective","emotional_triggers","hooks","channels",
+    "segments","pains","marketing_frameworks","marketing_strategies","awareness_stage",
+    "funnel_stage","tones","features","benefits","transformational_benefits","usps",
+    "message_map","proofs","brand_guardrails","seasonality","style","offer_pricing",
+    "cta","content_formats","art_direction"
   ]
 
   used = collect_used_inputs(state)                   // مدخلات المستخدم + افتراضات موثقة
   used = fill_missing_with_tags(used, "[افتراض]")    // مع سبب مختصر لكل حقل ناقص
-  used["Hooks"] = generate_hooks(3..5, 80, used)     // ≤80 حرفًا لكل Hook
+  used["hooks"] = generate_hooks(3..5, 80, used)     // ≤80 حرفًا لكل hook
 
   art = build_art_direction_paragraph(used)          // وفق §ART_DIRECTION_GUIDE_2025_10
 
@@ -4751,25 +4751,25 @@ function render_output(state):
   // 2) ملء أي نقص بوسم [افتراض] مع سبب مختصر
   used = fill_missing_with_tags(used, tag="[افتراض]")
 
-  // 3) توليد Hooks (3–5) ≤ 80 حرفًا ومشروطة ببقية الحقول
-  used["Hooks"] = generate_hooks(count=3..5, max_len=80, based_on=used)
+  // 3) توليد hooks (3–5) ≤ 80 حرفًا ومشروطة ببقية الحقول
+  used["hooks"] = generate_hooks(count=3..5, max_len=80, based_on=used)
 
-  // 4) بناء فقرة Art Direction وصفية وفق §ART_DIRECTION_GUIDE_2025_10
+  // 4) بناء فقرة art_direction وصفية وفق §ART_DIRECTION_GUIDE_2025_10
   art = build_art_direction_paragraph(used)
 
   // 5) تحقق صارم: جميع Labels موجودة بالأسماء نفسها حرفيًا
   required = [
-    "Creative Brief","marketing_objective","emotional_trigger","Hooks","channels",
-    "segments","pains","Marketing frameworks","marketing_strategies","awareness_stage",
-    "funnel_stage","Tones","features","benefits","transformational_benefits","usps",
-    "message_map","proofs","brand guardrails","seasonality","style","offer/pricing",
-    "CTA","Content Formats","Art Direction"
+    "creative_brief","marketing_objective","emotional_triggers","hooks","channels",
+    "segments","pains","marketing_frameworks","marketing_strategies","awareness_stage",
+    "funnel_stage","tones","features","benefits","transformational_benefits","usps",
+    "message_map","proofs","brand_guardrails","seasonality","style","offer_pricing",
+    "cta","content_formats","art_direction"
   ]
   for label in required:
     assert has_value(used[label]), "Missing label: " + label
-  assert nonempty(art), "Missing Art Direction paragraph"
+  assert nonempty(art), "Missing art_direction paragraph"
 
-  // 6) الطباعة الإجبارية بالترتيب: Used Inputs → Art Direction → النص → الامتثال
+  // 6) الطباعة الإجبارية بالترتيب: Used Inputs → art_direction → النص → الامتثال
   print_used_inputs(used)
   print_art_direction(art)
   print_main_content(state)
@@ -4784,7 +4784,7 @@ on_error(e):
 <!-- CMIS:END::PRE_OUTPUT_GUARD_2025_10 -->
 <!-- CMIS:START::OUTPUT_CONTRACT_HARD_2025_10 -->
 المواصفات الكاملة لعقد الإخراج الإلزامي كما في `instruction_prompt.md` §OUTPUT_CONTRACT_HARD_2025_10. 
-يُرجى الالتزام بالأسماء والترتيب، وعدم طباعة أي محتوى قبل Used Inputs وArt Direction.
+يُرجى الالتزام بالأسماء والترتيب، وعدم طباعة أي محتوى قبل Used Inputs وقسم art_direction («Art Direction — وصف شامل»).
 <!-- CMIS:END::OUTPUT_CONTRACT_HARD_2025_10 -->
 <!-- CMIS:START::ART_DIRECTION_GUIDE_2025_10 -->
 # ART DIRECTION — الدليل التنفيذي الشامل
@@ -4831,21 +4831,21 @@ on_error(e):
 **منطق تنفيذي (pseudo):**
 function enforce_output_contract(state):
   required_labels = [
-    "Creative Brief","marketing_objective","emotional_trigger","Hooks","channels",
-    "segments","pains","Marketing frameworks","marketing_strategies","awareness_stage",
-    "funnel_stage","Tones","features","benefits","transformational_benefits","usps",
-    "message_map","proofs","brand guardrails","seasonality","style","offer/pricing",
-    "CTA","Content Formats","Art Direction"
+    "creative_brief","marketing_objective","emotional_triggers","hooks","channels",
+    "segments","pains","marketing_frameworks","marketing_strategies","awareness_stage",
+    "funnel_stage","tones","features","benefits","transformational_benefits","usps",
+    "message_map","proofs","brand_guardrails","seasonality","style","offer_pricing",
+    "cta","content_formats","art_direction"
   ]
   used = collect_used_inputs(state)  // دمج مدخلات المستخدم + الافتراضات الموثقة
   used = fill_missing_with_tags(used, tag="[افتراض]") // مع سبب مختصر
 
-  // Hooks: توليد 3–5 Hooks متسقة
-  used["Hooks"] = generate_hooks(3..5, max_len=80, conditioned_on=used)
+  // hooks: توليد 3–5 hooks متسقة
+  used["hooks"] = generate_hooks(3..5, max_len=80, conditioned_on=used)
 
-  // تحضير Art Direction وصفيًا وفق §ART_DIRECTION_GUIDE_2025_10
+  // تحضير art_direction وصفيًا وفق §ART_DIRECTION_GUIDE_2025_10
   art = build_art_direction_paragraph(used, guide_ref="ART_DIRECTION_GUIDE_2025_10")
-  assert_nonempty(art, "Art Direction")
+  assert_nonempty(art, "art_direction")
 
   // تحقق وجود كل Label بالاسم **الحرفي**:
   for label in required_labels:
@@ -4955,28 +4955,28 @@ function enforce_output_contract(state):
 
 ## قالب “Used Inputs” (ينسخ قبل كل أصل)
 
-* Creative Brief: …
+* creative_brief: …
 * marketing_objective: …
-* emotional_trigger: …
-* Hooks: …
+* emotional_triggers: …
+* hooks: …
 * channels: …
 * segments: …
 * pains: …
-* Marketing frameworks: …
+* marketing_frameworks: …
 * marketing_strategies: …
 * awareness_stage / funnel_stage: …
-* Tones: …
+* tones: …
 * features / benefits / transformational_benefits: …
 * usps: …
 * message_map: …
 * proofs: …
-* brand guardrails: …
+* brand_guardrails: …
 * seasonality: …
 * style: …
-* offer/pricing: …
-* CTA: …
-* Content Formats: …
-* Art Direction: …
+* offer_pricing: …
+* cta: …
+* content_formats: …
+* art_direction: …
 
 <!-- CMIS:END::OUTPUT_TEMPLATES_2025_10 -->
 
