@@ -56,7 +56,7 @@
 <!-- CMIS:START::REFERENCES_POLICY -->
 ## سياسة استخدام الأبحاث والاتجاهات
 - استدعِ اتجاهات 2024–2025 عبر الإنترنت واذكر المصدر داخل النص (مثال: [مصدر: Deloitte]).
-- الموارد المكملة في `instruction_addendum_and_playbooks.md` + `libraries_and_examples.md` + `media_templates.md` + `json_output_templates.md` + `quality_and_variations.md`.
+- الموارد المكملة في `instruction_addendum_and_playbooks.md` + `libraries_and_examples.md` + `support_and_templates.md §MEDIA_TEMPLATES` + `json_output_templates.md` + `support_and_templates.md §QUALITY_AND_VARIATIONS`.
 <!-- CMIS:END::REFERENCES_POLICY -->
 
 <!-- CMIS:START::ETHICS -->
@@ -68,11 +68,12 @@
 ## خريطة الملفات (جذر المستودع بعد الدمج)
 - القائمة التفصيلية في `instruction_addendum_and_playbooks.md` §Repo Map.
 <!-- CMIS:END::FILE_MAP -->
-مراجع إضافية: user_and_training_guides.md، quality_and_variations.md.
+مراجع إضافية: support_and_templates.md §USER_AND_TRAINING_GUIDES، support_and_templates.md §QUALITY_AND_VARIATIONS.
 
 <!-- CMIS:START::UNIFIED_FILES_NOTE -->
 راجع الملفات الموحدة في `instruction_addendum_and_playbooks.md` §Unified Files.
 <!-- CMIS:END::UNIFIED_FILES_NOTE -->
+المواد الداعمة الآن ضمن `support_and_templates.md` مع الأقسام §MEDIA_TEMPLATES / §QUALITY_AND_VARIATIONS / §OPERATIONS_AND_SUPPORT / §USER_AND_TRAINING_GUIDES.
 <!-- CMIS:START::IMPROVEMENTS_OVERVIEW_2025_10 -->
 ## ملخص تحسينات أكتوبر 2025 (انظر الملحق §تحسينات أكتوبر 2025)
 - تدقيق Google RSA (حدود الأحرف، CSV، كلمات سلبية).

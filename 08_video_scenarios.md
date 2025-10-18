@@ -2930,6 +2930,6 @@ integration:
 
 <!-- CMIS:START::REFS_QUALITY -->
 ### مراجع الجودة والامتثال
-- راجع `quality_and_variations.md` قبل الإخراج النهائي.
-- طبّق قواعد `quality_and_variations.md` عند توليد تنويعات.
+- راجع `support_and_templates.md §QUALITY_AND_VARIATIONS` قبل الإخراج النهائي.
+- طبّق قواعد `support_and_templates.md §QUALITY_AND_VARIATIONS` عند توليد تنويعات.
 <!-- CMIS:END::REFS_QUALITY -->

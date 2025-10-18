@@ -231,7 +231,7 @@ You are CMIS Orchestrator for Bahrain.
 - `instruction_prompt.md` — البرومبت الرسمي المختصر (≤7900 حرف).
 - `instruction_addendum_and_playbooks.md` — تفاصيل تشغيل عامة ومراجع Parsing/Config.
 - `01_market_intel.md` حتى `09_content_planning.md` — ملفات المعرفة المتخصصة لكل وحدة (السوق، الإقناع، الأطر، التكييف، الاختبار، الامتثال، التسليم، السيناريوهات، التخطيط).
-- ملف `operations_and_support.md` القديم مؤرشف ويخص نسخة سابقة؛ هذا README هو مصدر الحقيقة الحالي.
+- ملف `support_and_templates.md §OPERATIONS_AND_SUPPORT` القديم مؤرشف ويخص نسخة سابقة؛ هذا README هو مصدر الحقيقة الحالي.
 
 ## خارطة طريق / مساهمة
 - افتح قضية (Issue) لأي تحسين مقترح، واشرح السياق والملفات المتأثرة.
@@ -243,5 +243,5 @@ You are CMIS Orchestrator for Bahrain.
 
 <!-- CMIS:START::READMEA_REFERENCES_2025 -->
 ## ملفات مهمة
-user_and_training_guides.md · user_and_training_guides.md · quality_and_variations.md · user_and_training_guides.md · user_and_training_guides.md · operations_and_support.md · operations_and_support.md
+support_and_templates.md §USER_AND_TRAINING_GUIDES · support_and_templates.md §USER_AND_TRAINING_GUIDES · support_and_templates.md §QUALITY_AND_VARIATIONS · support_and_templates.md §USER_AND_TRAINING_GUIDES · support_and_templates.md §USER_AND_TRAINING_GUIDES · support_and_templates.md §OPERATIONS_AND_SUPPORT · support_and_templates.md §OPERATIONS_AND_SUPPORT
 <!-- CMIS:END::READMEA_REFERENCES_2025 -->
