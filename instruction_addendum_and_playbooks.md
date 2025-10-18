@@ -4659,6 +4659,95 @@ glossary:
 <!-- CMIS:START::ART_DIRECTION_GUIDE_2025_10 -->
 # ART DIRECTION — الدليل التنفيذي الشامل
 
+هنا يتم تحديد الرؤية البصرية الشاملة والمزاج العام الذي يجب أن يعكسه المحتوى.
+
+## 1) المفهوم/الفكرة الأساسية (The Core Concept/Idea)
+- **الوصف:** فكرة التصميم والشعور المستهدف (استراتيجي/عاطفي).
+- **المزاج العام (Mood):** أمثلة: دافئ، احترافي، مرح، غامض، فاخر، بسيط.
+- **النمط (Style):** أمثلة: عصري (Modern)، كلاسيكي (Classic)، بسيط (Minimalist)، مستقبلي (Futuristic)، ريفي (Rustic).
+- **الرسالة البصرية (Visual Message):** ما الذي نريد أن نقوله دون كلام؟ أمثلة: “منتجنا سهل الاستخدام”، “نحن علامة صديقة للبيئة”.
+- **الإحساس العام (Look & Feel):** وصف شامل للتجربة (نظيف ومنظّم مع لمسة ألوان زاهية…).
+
+## 2) العناصر البصرية (Visual Elements)
+- **لوحة الألوان (Color Palette):** حدِّد ألوانًا أساسية وثانوية مع قيم HEX (مثال: #87CEEB، #FFFFFF، #F5F5F5، أو هوية العلامة).
+- **الخطوط (Typography):** عناوين/نصوص (مثال: Cairo Bold للعناوين، Poppins Regular للنص).
+- **الصور والرسومات (Imagery & Graphics):** صور فوتوغرافية حقيقية وعالية الجودة للمنتج/الفريق/الفعّاليات + رسومات خطية بسيطة؛ تجنّب Stock النمطية.
+- **الأيقونات والرموز (Icons & Symbols):** أيقونات بسيطة بخطوط رفيعة متسقة مع الأسلوب.
+- **التكوين والتخطيط (Composition & Layout):** تخطيط شبكي، مساحات بيضاء كافية، وضع الشعار دائمًا في الزاوية العلوية اليمنى.
+- **عناصر العلامة (Branding Elements):** مواضع الشعار، الأنماط الرسومية الخاصة، وأي أصول بصرية معتمدة.
+
+## للفيديو (For Video)
+- **سرعة المونتاج (Pacing):** سريع/حيوي أم بطيء/سينمائي؟
+- **الانتقالات (Transitions):** انتقالات بسيطة (cuts) أم حركية (motion graphics)؟
+- **تدرّج الألوان (Color Grading):** ألوان مشبعة ودافئة أم باردة وباهتة؟
+
+> **إلزام:** عند توليد أي أصل، اكتب فقرة “Art Direction — وصف شامل” تغطي جميع البنود أعلاه، بصياغة وصفية متماسكة (لا جداول للنصوص الطويلة).
+<!-- CMIS:END::ART_DIRECTION_GUIDE_2025_10 -->
+<!-- CMIS:START::CONTENT_FORMATS_TAXONOMY_2025_10 -->
+# CONTENT FORMATS — التصنيف الموحّد
+
+## أشكال المحتوى المرئي (Visual Content Formats)
+- صورة (Image): تصميم جرافيك، انفوجرافيك، صورة فوتوغرافية، كاروسيل، ميمز.
+
+## أشكال المحتوى الحركي (Video Content Formats)
+- فيديو قصير (Short-form Video): Instagram Reel، TikTok، YouTube Shorts.
+- فيديو طويل (Long-form Video): تعليمي/تثقيفي، تمثيلي/قصصي، مؤثر، شهادات العملاء، بث مباشر، ويبينار.
+
+## أشكال المحتوى المكتوب (Written Content Formats)
+- مدونة/مقال، دراسة حالة، كتاب إلكتروني، منشورات نصية.
+
+## أشكال المحتوى الصوتي (Audio Content Formats)
+- بودكاست، مساحات تويتر/غرف صوتية.
+<!-- CMIS:END::CONTENT_FORMATS_TAXONOMY_2025_10 -->
+<!-- CMIS:START::PRE_OUTPUT_GUARD_2025_10 -->
+# PRE-OUTPUT GUARD — منطق إلزامي قبل أي إخراج
+
+pseudo:
+function render_output(state):
+  // 1) جمع المدخلات المستخدمة (مدخلات المستخدم + الافتراضات الموثقة)
+  used = collect_used_inputs(state)  // يملأ كل الحقول المطلوبة حرفيًا وبالترتيب
+
+  // 2) ملء أي نقص بوسم [افتراض] مع سبب مختصر
+  used = fill_missing_with_tags(used, tag="[افتراض]")
+
+  // 3) توليد Hooks (3–5) ≤ 80 حرفًا ومشروطة ببقية الحقول
+  used["Hooks"] = generate_hooks(count=3..5, max_len=80, based_on=used)
+
+  // 4) بناء فقرة Art Direction وصفية وفق §ART_DIRECTION_GUIDE_2025_10
+  art = build_art_direction_paragraph(used)
+
+  // 5) تحقق صارم: جميع Labels موجودة بالأسماء نفسها حرفيًا
+  required = [
+    "Creative Brief","marketing_objective","emotional_trigger","Hooks","channels",
+    "segments","pains","Marketing frameworks","marketing_strategies","awareness_stage",
+    "funnel_stage","Tones","features","benefits","transformational_benefits","usps",
+    "message_map","proofs","brand guardrails","seasonality","style","offer/pricing",
+    "CTA","Content Formats","Art Direction"
+  ]
+  for label in required:
+    assert has_value(used[label]), "Missing label: " + label
+  assert nonempty(art), "Missing Art Direction paragraph"
+
+  // 6) الطباعة الإجبارية بالترتيب: Used Inputs → Art Direction → النص → الامتثال
+  print_used_inputs(used)
+  print_art_direction(art)
+  print_main_content(state)
+  print_compliance_meta()
+
+on_error(e):
+  print("⚠️ لا يمكن طباعة الإعلان قبل استيفاء عقد الإخراج.
+"
+        + "سبب: " + e.message + "
+"
+        + "أكمل الحقول الناقصة أو وافق على استخدام [افتراض] لإكمالها، ثم أعد المحاولة.")
+<!-- CMIS:END::PRE_OUTPUT_GUARD_2025_10 -->
+<!-- CMIS:START::OUTPUT_CONTRACT_HARD_2025_10 -->
+المواصفات الكاملة لعقد الإخراج الإلزامي كما في `instruction_prompt.md` §OUTPUT_CONTRACT_HARD_2025_10. 
+يُرجى الالتزام بالأسماء والترتيب، وعدم طباعة أي محتوى قبل Used Inputs وArt Direction.
+<!-- CMIS:END::OUTPUT_CONTRACT_HARD_2025_10 -->
+<!-- CMIS:START::ART_DIRECTION_GUIDE_2025_10 -->
+# ART DIRECTION — الدليل التنفيذي الشامل
+
 ## 1) المفهوم/الفكرة الأساسية (The Core Concept/Idea)
 - **الوصف:** فكرة التصميم والشعور المستهدف (استراتيجي/عاطفي).
 - **Mood:** مثال: دافئ، احترافي، مرح، غامض، فاخر، بسيط.
