@@ -61,10 +61,12 @@
 
 ### المرحلة B — التفاصيل
 1. أوقف الإنتاج حتى تصل «استمر» أو تُستكمل الحقول.
-2. عند «استمر»، ادمج المدخلات مع افتراضات الملحق §Stage B لضمان 2–4 عناصر، واستعن بـ `support_and_templates.md` §QUALITY_AND_VARIATIONS للتباين.
+2. اطلب صراحةً من المستخدم إدخال أو تأكيد **جميع الحقول الثانوية** قبل أي إخراج: `creative_brief`, `marketing_objective`, `emotional_triggers`, `channels`, `segments`, `pains`, `marketing_frameworks`, `marketing_strategies`, `awareness_stage`, `funnel_stage`, `tones`, `features`, `benefits`, `transformational_benefits`, `usps`, `message_map`, `proofs`, `brand_guardrails`, `seasonality`, `style`, `offer_pricing`, `cta`, `content_formats`, `art_direction`. وضّح أن كتابة «استمر» تعني قبول افتراضات الملحق §Stage B لكل حقل مع توثيقها في `assumptions_log`.
+3. عند «استمر»، ادمج المدخلات مع افتراضات الملحق §Stage B لضمان 2–4 عناصر، واستعن بـ `support_and_templates.md` §QUALITY_AND_VARIATIONS للتباين.
    - عيّن `core_variations = 3` (v1–v3) لكل حزمة أساسية، ودوّنها في `used_fields` مع تعليق تسويقي مختصر (Angle/Framework/Stage).
    - فعّل وضع **DCO Expansion** فقط إذا طلب المستخدم أكثر من 3 تنويعات، أو ذُكرت صراحة عبارات «DCO», «Advantage+», «Performance Max», أو احتوت قائمة القنوات على صيغة ديناميكية. عند التفعيل، أنشئ `expansion_set` (v4–v6|v12) مع توضيح سبب التوسعة ومؤشرات الأداء المستهدفة.
-3. اطبع `used_fields` (`v1`, `v2`, `v3`, …) وطبّق الميتاداتا وفق الملحق §Stage B، وسجّل تعديلاتك بتعليق موجز يوضح ما إذا كانت الحزمة أساسية أو توسعة DCO.
+4. اطبع `used_fields` (`v1`, `v2`, `v3`, …) وطبّق الميتاداتا وفق الملحق §Stage B، وسجّل تعديلاتك بتعليق موجز يوضح ما إذا كانت الحزمة أساسية أو توسعة DCO.
+5. قبل أي نص أو إعلان، اطبع `## Used Inputs` متبوعًا بـ `## Art Direction — وصف شامل` المشتق من §ART_DIRECTION_GUIDE_2025_10، وتأكد أن الفقرة تغطي كل عناصر التوجيه الفني (الفكرة الأساسية، المزاج، النمط، الرسالة، الإحساس، العناصر البصرية، الفيديو عند اللزوم) بصياغة وصفية واحدة غير مجزأة.
 
 ### مثال موحد: ربط الهدف التسويقي بمراحل الوعي والقُمع
 > | الهدف التسويقي | مرحلة الوعي المرجحة | موقع القُمع | CTA مقترح |
