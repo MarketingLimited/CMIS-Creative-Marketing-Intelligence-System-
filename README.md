@@ -97,7 +97,9 @@ CMIS هو نظام ذكاء تسويقي توليدي بُني خصيصًا لت
 - عند التصحيح التلقائي، أظهر النص المنقح وتوثيق سبب التعديل.
 ```
 
-3. ضمن **Knowledge** (المرفقات) قم بتحميل `instruction_prompt.md` (البرومبت الرسمي المختصر)، `instruction_addendum_and_playbooks.md` (التفاصيل التكميلية)، وجميع ملفات الوحدات `01_market_intel.md` حتى `09_content_planning.md` لتصبح مرجعًا للنموذج.
+<!-- CMIS:START::README_CHATGPT_KNOWLEDGE -->
+3. ضمن **Knowledge** (المرفقات) قم بتحميل `instruction_prompt.md` (البرومبت الرسمي المختصر)، `instruction_addendum_and_playbooks.md` (التفاصيل التكميلية)، وجميع ملفات الوحدات `01_market_intel.md` حتى `08_09_video_and_content.md §MODULE_09` لتصبح مرجعًا للنموذج.
+<!-- CMIS:END::README_CHATGPT_KNOWLEDGE -->
 4. (اختياري) أضف Prompt Starters لتسريع الاستخدام، مثل:
    - "بادر بتحليل سوق لخدمة الدفع بالتقسيط وولّد إعلانات Meta/Google".
    - "أنشئ خطة محتوى أسبوعية لحساب إنستقرام لمنتج صحي".
@@ -122,7 +124,9 @@ You are CMIS Orchestrator for Bahrain.
 - Auto-correct compliance issues and show sanitized_copy alongside reasons.
 ```
 
-3. أرفق ملفات المعرفة `instruction_prompt.md`، `instruction_addendum_and_playbooks.md`، وملفات الوحدات `01_market_intel.md` إلى `09_content_planning.md` في خانة Knowledge أو References.
+<!-- CMIS:START::README_GEMINI_KNOWLEDGE -->
+3. أرفق ملفات المعرفة `instruction_prompt.md`، `instruction_addendum_and_playbooks.md`، وملفات الوحدات `01_market_intel.md` إلى `08_09_video_and_content.md §MODULE_09` في خانة Knowledge أو References.
+<!-- CMIS:END::README_GEMINI_KNOWLEDGE -->
 4. اضبط الهدف الافتراضي (Goal) مثل: `full_strategy` لتشغيل السلسلة الكاملة أو `quick_draft` للاختصار، بحسب الاستخدام المطلوب.
 5. **تشغيل مثال:** نفّذ الطلب التالي للحصول على إعلانات + سيناريو فيديو + تقرير امتثال:
 
@@ -230,7 +234,9 @@ You are CMIS Orchestrator for Bahrain.
 ## بنية الملفات
 - `instruction_prompt.md` — البرومبت الرسمي المختصر (≤7900 حرف).
 - `instruction_addendum_and_playbooks.md` — تفاصيل تشغيل عامة ومراجع Parsing/Config.
-- `01_market_intel.md` حتى `09_content_planning.md` — ملفات المعرفة المتخصصة لكل وحدة (السوق، الإقناع، الأطر، التكييف، الاختبار، الامتثال، التسليم، السيناريوهات، التخطيط).
+<!-- CMIS:START::README_FILE_LIST -->
+- `01_market_intel.md` حتى `08_09_video_and_content.md §MODULE_09` — ملفات المعرفة المتخصصة لكل وحدة (السوق، الإقناع، الأطر، التكييف، الاختبار، الامتثال، التسليم، السيناريوهات، التخطيط).
+<!-- CMIS:END::README_FILE_LIST -->
 - ملف `support_and_templates.md §OPERATIONS_AND_SUPPORT` القديم مؤرشف ويخص نسخة سابقة؛ هذا README هو مصدر الحقيقة الحالي.
 
 ## خارطة طريق / مساهمة
