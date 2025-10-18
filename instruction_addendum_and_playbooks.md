@@ -51,8 +51,9 @@ function prepare_secondary_fields(intake):
         if continue_flag:
             base += defaults[field]
         base += user_values
-        merged[field] = enforce_lengths(base,
-            min_items=2 if field in core_fields else 1,
+        merged[field] = enforce_lengths(
+            base,
+            min_items=2,
             max_items=4 if field in core_fields else None
         )
 
@@ -62,6 +63,7 @@ function prepare_secondary_fields(intake):
 - `normalize_tokens` يجب أن يحول «استمر» أو «استمري» إلى كلمة أساسية واحدة.
 - `load_defaults_from_addendum` يُشير مباشرةً إلى الجداول أعلاه، لذلك أي تحديث هنا ينعكس آليًا على الروتين.
 - `enforce_lengths` يضمن 2–4 عناصر للحقل من مجموعة `core_fields`، وبحد أدنى عنصرين لبقية القوائم.
+- **ملاحظة Stage B:** بعد الدمج (سواء بالاعتماد على افتراضات «استمر» أو مدخلات المستخدم)، يجب ألّا يقل أي حقل ثانوي عن عنصرين نشطين في `used_fields` لضمان توازن التنويعات.
 - عند غياب كلمة «استمر» وغياب قوائم المستخدم، يجب إرسال مطالبة تذكيرية بضرورة تزويد القوائم أو كتابة «استمر».
 
 ### جدول used_fields قبل بناء النسخ
