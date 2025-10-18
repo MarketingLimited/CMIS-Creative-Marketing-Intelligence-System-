@@ -1682,7 +1682,7 @@
 # 🎯 دليل البدء السريع — CMIS (2025)
 
 - الهدف: تمكين أي مستخدم من إنجاز حملة أو محتوى خلال دقائق، مع امتثال كامل (#إعلان/BHD/RTL).
-- نِطاق الملفات: instruction_prompt.md + الوحدات 01–10 + المكتبات (hooks/video/audio/industry/json) + الجودة.
+- نِطاق الملفات: instruction_prompt.md + 01_market_intel.md + 02_persuasion.md + 03_frameworks.md + 04_adaptation_distribution.md + 05_06_testing_and_compliance.md + instruction_addendum_and_playbooks.md (تضم الوحدة 07) + 08_09_video_and_content.md + المكتبات (hooks/video/audio/industry/json) + الجودة.
 <!-- CMIS:END::UG_HEADER -->
 
 <!-- CMIS:START::UG_WORKFLOWS -->
