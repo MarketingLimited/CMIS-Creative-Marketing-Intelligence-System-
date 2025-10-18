@@ -146,7 +146,7 @@ function prepare_secondary_fields(intake):
 - 06_compliance.md
 - 08_video_scenarios.md
 - 09_content_planning.md
-- 10_trend_research.md
+- 01_market_intel.md §TREND_RESEARCH
 - README.md
 <!-- CMIS:END::REPO_MAP -->
 
