@@ -94,6 +94,7 @@
 
 ## قاعدة أساسية
 - كل تنويع يجب أن يختلف في **3 عناصر على الأقل** من: Hook، Framework، Angle، Tone، Visual Style، **Audio (voice/music/SFX)**، **Community (UGC/EGC/Brand)**، **Interactivity (CTA/Question/Shop)**.
+- **تنويع الوسائط إلزامي:** في أي حزمة إعلانات/محتوى ≥ 3 أصول يجب تضمين مزيج من صورة ثابتة (أو كاروسيل)، فيديو قصير (Reel/TikTok)، وStory/قصّة تفاعلية أو صيغة فيديو بديلة. دوّن نوع الوسيط بوضوح داخل الميتاداتا (`media_type`) وضمن وصف التصميم.
 
 ## تغييرات إلزامية للثلاثة الرئيسيين
 - v1: Pain-focused — **PAS** — زاوية الخسارة — نبرة عاجلة.
@@ -102,6 +103,7 @@
 - أضف اختلافًا صوتيًا على الأقل في أحد التنويعات (لهجة/موسيقى/إيقاع).
 - أضف اختلافًا مجتمعيًا: قصة موظف (EGC) مقابل شهادة عميل (UGC).
 - أضف اختلافًا تفاعليًا: CTA مباشر مقابل سؤال/استطلاع.
+- اربط كل تنويع بـ `awareness_stage` و`funnel_stage` و`marketing_strategy` داخل حقل الميتاداتا، ووضّح داخل النص كيف يخدم هذا الارتباط (سطر تحليلي قصير).
 <!-- CMIS:END::VAR_RULES -->
 
 <!-- CMIS:START::VAR_MATRIX -->
@@ -122,6 +124,11 @@
 - مجموع ≥ 3 → ✅ جيد.
 الحد الأدنى للنشر: كل زوج ≥ 3.
 ```
+
+### متطلبات الميتاداتا الموسعة
+- **لكل تنويع** ضمن أي قناة، يجب أن يتضمّن سجل الميتاداتا الحقول التالية على الأقل: `marketing_framework`, `marketing_strategy`, `awareness_stage`, `funnel_stage`, `transformational_benefit`, `usp_reference`, `message_map`, `media_type`, `design_trend`, `audio_plan`.
+- اربط الحقول المذكورة أعلاه بجداول `used_fields` في الإخراج الرئيسي لضمان التتبع؛ أي تناقض يُعد مخالفة جودة.
+- أضف ملخصًا تنفيذيًا من جملة واحدة يشرح كيف يخدم هذا المزيج الهدف (مثال: "Framework PAS + Strategy UGC لمعالجة ألم التأخر بالاستلام في مرحلة Problem-aware/MOFU").
 
 <!-- CMIS:END::VAR_QUALITY_CHECK -->
 <!-- CMIS:END::VARIATION_STRATEGY -->
