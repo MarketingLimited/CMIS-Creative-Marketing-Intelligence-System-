@@ -13,7 +13,7 @@
 {
   "brand": "",
   "product_or_service": "",
-  "objective": "awareness|sales|leads",
+  "objective": "awareness|conversion|retention",
   "target_audience": "",
   "channels": [],
   "budget_bhd": "",
@@ -50,6 +50,13 @@
 }
 ```
 <!-- CMIS:END::INPUTS -->
+
+### مثال موحد: ربط الهدف التسويقي بمراحل الوعي والقُمع
+> | الهدف التسويقي | مرحلة الوعي المرجحة | موقع القُمع | CTA مقترح |
+> | --- | --- | --- | --- |
+> | awareness | from unaware → problem-aware | TOFU | «تعرّف أكثر» أو «اكتشف القصة» |
+> | conversion | from solution-aware → product-aware | MOFU/BOFU | «احجز تجربة» أو «اطلب العرض» |
+> | retention | most-aware (عملاء حاليون) | Loyalty/Post-Purchase | «جدّد اشتراكك» أو «شارك مزاياك» |
 
 <!-- CMIS:START::STEPS -->
 
@@ -689,7 +696,7 @@ validators:
 {
   "brand": "",
   "product_or_service": "",
-  "objective": "awareness|sales|leads",
+  "objective": "awareness|conversion|retention",
   "target_audience": "",
   "channels": [],
   "budget_bhd": "",

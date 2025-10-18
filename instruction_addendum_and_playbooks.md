@@ -94,13 +94,16 @@ function prepare_secondary_fields(intake):
 ### افتراضات متعددة تلقائية عند "استمر"
 - إن لم يقدّم المستخدم قيمًا، أنشئ **مصفوفات افتراضية** لكل حقل (2–4 عناصر على الأقل) لتوليد مزيج غني.
 - مثال سريع للأهداف والقنوات:
-  - إن كان `marketing_objective = awareness` → ركّز على:  
-    `emotional_triggers=[الفضول, الانتماء]`, `frameworks=[AIDA, StoryBrand]`,  
-    `strategies=[Educational, UGC]`, `tones=[ودية, مشوقة]`,  
+  - إن كان `marketing_objective = awareness` → ركّز على:
+    `emotional_triggers=[الفضول, الانتماء]`, `frameworks=[AIDA, StoryBrand]`,
+    `strategies=[Educational, UGC]`, `tones=[ودية, مشوقة]`,
     `awareness_stage=[unaware, problem-aware]`, `funnel_stage=[TOFU]`.
-  - إن كان `sales/BOFU` → ركّز على:  
-    `proofs, usps, offer-led`, `PAS/FAB/4U`, `tones=[واثقة, مهنية]`,  
-    `awareness_stage=[product-aware, most-aware]`, `funnel_stage=[BOFU]`.
+  - إن كان `marketing_objective = conversion` → ركّز على:
+    `proofs, usps, offer-led`, `PAS/FAB/4U`, `tones=[واثقة, مهنية]`,
+    `awareness_stage=[solution-aware, product-aware]`, `funnel_stage=[MOFU, BOFU]`.
+  - إن كان `marketing_objective = retention` → ركّز على:
+    `loyalty_programs, community, upsell`, `StoryBrand/4C`, `tones=[حانية, تقديرية]`,
+    `awareness_stage=[most-aware]`, `funnel_stage=[Loyalty/Post-Purchase]`.
 
 ### قواعد الربط الذكي (متى نستخدم ماذا)
 - **حسب الهدف والقناة والوعي/القمع**:
@@ -3432,7 +3435,7 @@ summary: مساعد صوتي يقدم ملخص الخطة ويؤكد الترخ�
 {
   "brand": "",
   "product_or_service": "",
-  "objective": "awareness|sales|leads",
+  "objective": "awareness|conversion|retention",
   "target_audience": "",
   "channels": [],
   "budget_bhd": "",
@@ -3447,6 +3450,13 @@ summary: مساعد صوتي يقدم ملخص الخطة ويؤكد الترخ�
 ### المدخلات الأصلية (منسوخة حرفيًا)
 
 <!-- CMIS:END::INPUTS -->
+
+### مثال موحد: ربط الهدف التسويقي بمراحل الوعي والقُمع
+> | الهدف التسويقي | مرحلة الوعي المرجحة | موقع القُمع | CTA مقترح |
+> | --- | --- | --- | --- |
+> | awareness | from unaware → problem-aware | TOFU | «تعرّف أكثر» أو «اكتشف القصة» |
+> | conversion | from solution-aware → product-aware | MOFU/BOFU | «احجز تجربة» أو «اطلب العرض» |
+> | retention | most-aware (عملاء حاليون) | Loyalty/Post-Purchase | «جدّد اشتراكك» أو «شارك مزاياك» |
 
 <!-- CMIS:START::STEPS -->
 
