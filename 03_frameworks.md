@@ -355,7 +355,7 @@ CTA: {{cta_primary}} (BHD)
 
 * **تمرير للمرحلة التالية:** `04_adaptation_distribution.md` مع قنوات مختارة.
 
-**انتهى ملف 03\_frameworks.md**
+**انتهى ملف `03_frameworks.md`**
 
 <!-- CMIS:END::STEPS -->
 
@@ -647,7 +647,7 @@ CTA: {{cta_primary}} (BHD)
 
 * **تمرير للمرحلة التالية:** `04_adaptation_distribution.md` مع قنوات مختارة.
 
-**انتهى ملف 03\_frameworks.md**
+**انتهى ملف `03_frameworks.md`**
 
 <!-- CMIS:END::EXAMPLES -->
 
