@@ -139,7 +139,9 @@
     "visual_style": "bold_minimalism|metallics|grain|neo_classic_futurism|motion",
     "audio_variant": "voice_gender/accent/music_sfx",
     "community_type": "ugc|egc|brand",
-    "interactivity": "direct_cta|question|shop"
+    "interactivity": "direct_cta|question|shop",
+    "media_type": "static_1x1|static_4x5|reel_9x16|carousel",
+    "distinct_axes": ["framework", "tone", "visual_style"]
   },
   "compliance_report_schema_ref": "quality_and_variations.md § مخطط تقرير الامتثال (JSON)"
 }
