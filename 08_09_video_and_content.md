@@ -24,7 +24,7 @@
 {
   "brand": "",
   "product_or_service": "",
-  "objective": "awareness|sales|leads",
+  "objective": "awareness|conversion|retention",
   "target_audience": "",
   "channels": [],
   "budget_bhd": "",
@@ -68,6 +68,13 @@
 }
 ````````````
 <!-- CMIS:END::INPUTS -->
+
+### مثال موحد: ربط الهدف التسويقي بمراحل الوعي والقُمع
+> | الهدف التسويقي | مرحلة الوعي المرجحة | موقع القُمع | CTA مقترح |
+> | --- | --- | --- | --- |
+> | awareness | from unaware → problem-aware | TOFU | «تعرّف أكثر» أو «اكتشف القصة» |
+> | conversion | from solution-aware → product-aware | MOFU/BOFU | «احجز تجربة» أو «اطلب العرض» |
+> | retention | most-aware (عملاء حاليون) | Loyalty/Post-Purchase | «جدّد اشتراكك» أو «شارك مزاياك» |
 
 <!-- CMIS:START::STEPS -->
 
@@ -2955,7 +2962,7 @@ integration:
 {
   "brand": "",
   "product_or_service": "",
-  "objective": "awareness|sales|leads",
+  "objective": "awareness|conversion|retention",
   "target_audience": "",
   "channels": [],
   "budget_bhd": "",
@@ -2974,7 +2981,7 @@ integration:
   "planning_period": "week|month|quarter",
   "brand": "",
   "product_or_service": "",
-  "marketing_objective": "sales|leads|awareness|engagement|traffic|retention",
+  "marketing_objective": "awareness|conversion|retention",
   "target_audience": "",
   "posting_frequency": "daily|3x_week|5x_week|2x_day",
   "budget_level": "low|medium|high",
@@ -3176,7 +3183,7 @@ video_content_types:
 
 ### **📊 نسب توزيع المحتوى (افتراضي لزيادة المبيعات)**
 `````yaml
-content_distribution_sales_goal:
+content_distribution_conversion_goal:
   
   awareness_content: "30%"  # لجذب جمهور جديد
     - educational_video: "10%"
@@ -3300,7 +3307,7 @@ content_distribution_sales_goal:
 `````python
 def generate_content_plan(input):
     # 1. تحليل الهدف
-    if input.goal == "sales":
+    if input.goal == "conversion":
         conversion_ratio = 0.30
         consideration_ratio = 0.40
         awareness_ratio = 0.30
@@ -3616,7 +3623,7 @@ video_content_types:
 
 ### **📊 نسب توزيع المحتوى (افتراضي لزيادة المبيعات)**
 `````yaml
-content_distribution_sales_goal:
+content_distribution_conversion_goal:
   
   awareness_content: "30%"  # لجذب جمهور جديد
     - educational_video: "10%"
@@ -3740,7 +3747,7 @@ content_distribution_sales_goal:
 `````python
 def generate_content_plan(input):
     # 1. تحليل الهدف
-    if input.goal == "sales":
+    if input.goal == "conversion":
         conversion_ratio = 0.30
         consideration_ratio = 0.40
         awareness_ratio = 0.30
